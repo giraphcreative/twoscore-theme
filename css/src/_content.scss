@@ -5,6 +5,7 @@
 	margin: 0 auto;
 	padding: 20px 20px 40px;
 	line-height: 2em;
+	@extend .list-styles;
 
 	@include respond-to( 768px ) {
 		padding: 40px 30px 60px;
@@ -80,6 +81,5 @@
 			opacity: 1;
 		}
 	}
-
 }
 

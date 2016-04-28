@@ -9,8 +9,8 @@ body {
 	@include respond-to( 769px ) { margin-top: 76px; }
 
 	&.open {
-		margin-top: 200px;
-		@include respond-to( 500px ) { margin-top: 168px; }
+		margin-top: 162px;
+		@include respond-to( 500px ) { margin-top: 167px; }
 		@include respond-to( 769px ) { margin-top: 76px; }
 	}
 }
@@ -28,7 +28,6 @@ nav {
 	margin-top: -100px;
 	@include clearfix;
 
-
 	.boxshadow & {
 		@include prefix( "box-shadow", "0 8px 0 rgba( 0, 0, 0, 0.3)" );
 	}
@@ -37,15 +36,16 @@ nav {
 		text-align: center;
 		height: 0;
 		overflow: hidden;
+		
 		.csstransitions & {
 			@include prefix( "transition", "height 300ms ease-in-out" );
 		}
-		
+
 		@include respond-to( 769px ) { height: 76px; }
 
 		&.open {
-			height: 204px;
-			@include respond-to( 500px ) { height: 112px; }
+			height: 162px;
+			@include respond-to( 500px ) { height: 167px; }
 		}
 
 		li {
@@ -141,9 +141,6 @@ nav {
 					width: 14%;
 				}
 			}
-			
-
-
 		}
 
 	}
