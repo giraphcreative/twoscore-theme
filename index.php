@@ -3,8 +3,9 @@
 Home/catch-all template
 */
 
-get_header(); ?>
+get_header();
 
+?>
 
 	<section role="main">
 		
