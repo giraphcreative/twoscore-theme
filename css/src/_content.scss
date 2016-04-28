@@ -1,0 +1,74 @@
+
+
+.main-content {
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 20px 20px 40px;
+	line-height: 2em;
+
+	@include respond-to( 768px ) {
+		padding: 40px 30px 60px;
+	}
+
+	@include respond-to( 1024px ) {
+		padding: 60px 40px 100px;
+	}
+
+	@include respond-to( 1220px ) {
+		padding: 100px 40px 150px;
+	}
+
+	h1 {
+		@include font-title;
+		color: $grey;
+		text-align: center;
+		font-size: 1.8em;
+
+		@include respond-to( 768px ) {
+			font-size: 3em;
+		}
+	}
+
+	h2 {
+		@include font-title;
+		color: $grey;
+		font-size: 1.5em;
+		line-height: 1.6em;
+		text-align: center;
+	}
+
+	h3 {
+		@include font-title;
+		color: $grey;
+		font-size: 1.2em;
+		line-height: 1.6em;
+	}
+
+	.post-meta {
+		font-size: .9em;
+		color: lighten( $grey, 20% );
+		text-align: center;
+		padding-bottom: 20px;
+		border-bottom: 2px dotted lighten( $grey, 40% );
+		margin-bottom: 20px;
+		@include font-italic;
+
+		span {
+			display: block;
+
+			@include respond-to( 500px ) {
+				display: inline;
+			}
+		}
+	}
+
+	article {
+		padding: 20px 0;
+		border-top: 2px dotted lighten( $grey, 40% );
+
+		&:first-child {
+			border-top: 0;
+		}
+	}
+}
+

@@ -1,0 +1,42 @@
+
+
+.header {
+	position: relative;
+	text-align: center;
+	padding: 20px 0;
+
+	a {
+		border: 0;
+	}
+
+	.logo {
+		position: relative;
+		z-index: 5;
+		padding: 50px 20px 20px;
+	}
+
+	.backgroundsize & {
+		background: url(../img/header-small.jpg) top center no-repeat;
+		background-size: cover;
+	}
+
+	.backgroundsize .home & {
+		background: url(../img/header.jpg) center center no-repeat;
+		background-size: cover;
+	}
+	
+	@include respond-to( 768px ) {
+		.logo {
+
+			.home & {
+				position: absolute;
+				left: 20%;
+				top: 10%;
+				max-width: 45%;
+				padding: 0;
+			}
+		}
+	}
+	
+}
+
