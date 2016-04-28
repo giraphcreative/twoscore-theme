@@ -141,7 +141,7 @@ get_header();
 		
 		<header>
 			<h2>Speaking</h2>
-			<p>I share my expertise in marketing strategy, organizational culture, branding, and strategic planning with partners across the country.  Don't be surprised if you also see me guest lecturing at a local university sharing my love of marketing and credit unions with undergraduate marketing students.</p>
+			<p>We share our expertise in marketing strategy, organizational culture, branding, and strategic planning with credit union partners all across the country.  Don't be surprised if you also see me guest lecturing at a local university sharing my love of marketing and credit unions with undergraduate marketing students.</p>
 		</header>
 
 		<div class="topics list-styles">
@@ -167,11 +167,11 @@ get_header();
 		</div>
 			
 		<div class="download">
-			<a href="<?php bloginfo( 'template_url' ) ?>/documents/speaking-topics.pdf">Download my Speaking Topics</a>
+			<a href="<?php bloginfo( 'template_url' ) ?>/documents/speaking-topics.pdf">Download our Speaking Topics</a>
 		</div>
 
 		<div class="dont-see">
-			<p><a href="mailto:amanda@twoscore.biz">Don’t see a topic listed?</a> I would love the opportunity to create a custom program based on your objectives and audience.</p>
+			<p><a href="mailto:amanda@twoscore.biz">Don’t see a topic listed?</a> We would love the opportunity to create a custom program based on your objectives and audience.</p>
 		</div>
 
 	</section>
@@ -193,7 +193,7 @@ get_header();
 			</div>
 			
 			<div class="news">
-				<h4>Some Articles I’ve Written</h4>
+				<h4>Some Articles We’ve Written</h4>
 				<ul>
 					<li><a href="https://www.cuinsight.com/four-things-to-do-when-your-marketing-isnt-working.html">4 Things To Do When Your Marketing Isn’t Working</a></li>
 					<li><a href="https://www.cuinsight.com/five-things-every-marketer-should-know.html">Five Things Every Marketer Should Know</a></li>
@@ -201,13 +201,18 @@ get_header();
 					<li><a href="http://www.cuinsight.com/creating-your-museum.html">Creating Your Museum</a></li>
 					<li><a href="http://www.cuinsight.com/make-a-plan.html">Make a Plan</a></li>
 					<li><a href="http://www.cuinsight.com/10-marketing-myths-that-could-be-costing-your-credit-union.html">10 Marketing Myths That Could Be Costing Your Credit Union</a></li>
-					<li><a href="http://trust.coop/2013/09/the-truth-about-gen-y/">The Truth About Gen Y</a></li>
-					<li><a href="http://www.cutimes.com/2013/01/16/will-your-new-year-have-goals-and-actions">Will Your New Year Have Goals and Actions</a></li>
-					<li><a href="https://trust.coop/2011/05/light-beer-and-credit-unions/">Light Beer and Credit Unions</a></li>
+					<li><a href="http://www.cutimes.com/2013/07/17/cooperative-trust-first-sell-marketing-https://www.cuinsight.com/10-things-can-kill-marketing-credit-union.html">Cooperative Trust: First, Sell Marketing Campaign Inside</a></li>
+					<li><a href="https://www.cuinsight.com/what-happens-at-a-successful-strategic-planning-session.html">Cooperative Trust: First, Sell Marketing Campaign Inside</a></li>
+					<li><a href="https://www.cuinsight.com/celebrate-bobs-swim-lessons-credit-union-lessons.html">Cooperative Trust: First, Sell Marketing Campaign Inside</a></li>
+					<li><a href="http://www.cutimes.com/2013/07/17/cooperative-trust-first-sell-marketing-campaign-in?slreturn=1461811297">Cooperative Trust: First, Sell Marketing Campaign Inside</a></li>
+					<li><a href="http://www.cutimes.com/2013/07/17/cooperative-trust-first-sell-marketing-campaign-in?slreturn=1461811297">Cooperative Trust: First, Sell Marketing Campaign Inside</a></li>
+					<li><a href="http://www.cutimes.com/2013/07/17/cooperative-trust-first-sell-marketing-campaign-in?slreturn=1461811297">Cooperative Trust: First, Sell Marketing Campaign Inside</a></li>
+					<li><a href="http://www.cutimes.com/2013/07/17/cooperative-trust-first-sell-marketing-campaign-in?slreturn=1461811297">Cooperative Trust: First, Sell Marketing Campaign Inside</a></li>
+					<li><a href="http://www.cutimes.com/2013/07/17/cooperative-trust-first-sell-marketing-campaign-in?slreturn=1461811297">Cooperative Trust: First, Sell Marketing Campaign Inside</a></li>
 				</ul>
 			</div>
 			<div class="interviews">
-				<h4>Interviews &amp; Articles About Me</h4>
+				<h4>Interviews &amp; Articles About Us</h4>
 				<ul>
 					<li><a href="http://www.cues.org/article/view/id/Next-Gen-Leaders-Amanda-Thomas">Next Gen Leaders: Amanda Thomas</a></li>
 					<li><a href="http://www.cutimes.com/2011/03/02/stick-to-the-fundamentals-and-reignite-your-passio">Stick to the Fundamentals and Reignite Your Passion</a></li>

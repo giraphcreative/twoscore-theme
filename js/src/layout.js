@@ -14,6 +14,8 @@ jQuery(document).ready(function( $ ) {
 				if ( $( 'body' ).hasClass( 'admin-bar' ) ) {
 					var admin_bar_height = $('#wpadminbar').height();
 					$( 'body > nav' ).css( 'top', admin_bar_height );
+				} else {
+					var admin_bar_height = 0;
 				}
 
 				if ( matchMedia('only screen and (min-width: 768px)').matches  ) {
