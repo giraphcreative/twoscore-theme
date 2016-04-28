@@ -18,14 +18,14 @@
 	<nav>
 		<button class="menu-toggle">menu</button>
 		<ul>
-			<li><a href="<?php print ( !is_front_page() ? get_bloginfo( 'home' ) : '' ) ?>#header">Home</a></li>
-			<li><a href="<?php print ( !is_front_page() ? get_bloginfo( 'home' ) : '' ) ?>#consulting">Consulting</a></li>
-			<li><a href="<?php print ( !is_front_page() ? get_bloginfo( 'home' ) : '' ) ?>#results">Results</a></li>
-			<li><a href="<?php print ( !is_front_page() ? get_bloginfo( 'home' ) : '' ) ?>#speaking">Speaking</a></li>
-			<li><a href="<?php print ( !is_front_page() ? get_bloginfo( 'home' ) : '' ) ?>#press">Press</a></li>
-			<li><a href="<?php print ( !is_front_page() ? get_bloginfo( 'home' ) : '' ) ?>/blog"<?php print ( !is_front_page() ? ' class="current"' : '' ) ?>>Blog</a></li>
-			<li><a href="<?php print ( !is_front_page() ? get_bloginfo( 'home' ) : '' ) ?>#about">About</a></li>
-			<li><a href="<?php print ( !is_front_page() ? get_bloginfo( 'home' ) : '' ) ?>#connect">Connect</a></li>
+			<li><a href="<?php print ( is_front_page() ? '#header' : get_bloginfo( 'home' ) . "?" ) ?>">Home</a></li>
+			<li><a href="<?php print ( is_front_page() ? '#consulting' : get_bloginfo( 'home' ) . "?scroll=consulting" ) ?>">Consulting</a></li>
+			<li><a href="<?php print ( is_front_page() ? '#results' : get_bloginfo( 'home' ) . "?scroll=results" ) ?>">Results</a></li>
+			<li><a href="<?php print ( is_front_page() ? '#speaking' : get_bloginfo( 'home' ) . "?scroll=speaking" ) ?>">Speaking</a></li>
+			<li><a href="<?php print ( is_front_page() ? '#press' : get_bloginfo( 'home' ) . "?scroll=press" ) ?>">Press</a></li>
+			<li><a href="<?php bloginfo( 'home' ) ?>/blog"<?php print ( !is_front_page() ? ' class="current"' : '' ) ?>>Blog</a></li>
+			<li><a href="<?php print ( is_front_page() ? '#about' : get_bloginfo( 'home' ) . "?scroll=about" ) ?>">About</a></li>
+			<li><a href="<?php print ( is_front_page() ? '#connect' : get_bloginfo( 'home' ) . "?scroll=connect" ) ?>">Connect</a></li>
 		</ul>
 	</nav>
 
