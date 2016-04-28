@@ -264,46 +264,9 @@ get_header();
 		<div class="wrap">
 			<div class="inner">
 				<p class="intro">Tell us how we can help your credit union thrive!</p>
-				<form id="contact" name="contact">
-					<div class="error text-center"></div>
-					<!--
-					<div class="grid-row group">
-
-						<div class="col6">
-							<p>First Name:
-								<input type="text" name="fname" placeholder="Jane" /></p>
-						</div>
-						<div class="col6">
-							<p>Last Name:
-								<input type="text" name="lname" placeholder="Smith" /></p>
-						</div>
-
-					</div>
-					<div class="grid-row group">
-
-						<div class="col6">
-							<p>Email Address:
-								<input type="text" name="email" placeholder="jane@awesomecu.com" /></p>
-						</div>
-						<div class="col6">
-							<p>Phone Number:
-								<input type="text" name="phone" placeholder="555-555-1234" /></p>
-						</div>
-
-					</div>
-					<div class="grid-row group">
-
-						<div class="col12">
-							<p>Describe your needs:</p> 
-								<textarea name="description" placeholder="Provide a few details about your credit union and how I can help you."></textarea></p>
-							<p><input type="submit" value="Send me info!" class="big red" /></p>
-						</div>
-
-					</div>
-					-->
+				<div class="grid-row group">
 					<?php print do_shortcode( '[gravityform id="1" title="false" description="false"]' ); ?>
-				</form>
-
+				</div>
 			</div>
 			
 		</div>
