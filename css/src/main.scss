@@ -317,41 +317,18 @@ section#speaking {
 
 
 section#press {
-
+	
 	.inner {
+		background: $purple url(../img/bg-tower.jpg) bottom center no-repeat;
+		background-size: cover;
 		padding: 20px;
 
-		.amanda-photo {
-			position: relative;
-			background: url(../img/photo-card.jpg) bottom center no-repeat;
-			background-size: cover;
-			height: 450px;
-			margin: 0 -20px;
+		@include respond-to( 768px ) {		
+			padding: 30px 20% 50px 30px;
+		}
 
-			.photo-info {
-				position: absolute;
-				bottom: 0;
-				right: 0;
-				left: 0;
-				text-align: right;
-				padding: 10px 20px;
-				color: white;
-				text-shadow: 0 0 10px $grey;
-				background: rgba( black, .3 );
-				
-				@include respond-to( 600px ) {
-					padding: 10px 30px;
-				}
-
-				.photo-credit {
-					font-size: .8em;
-					opacity: .7;
-
-					a {
-						color: white;
-					}
-				}
-			}
+		@include respond-to( 1024px ) {
+			padding: 40px 30% 50px 70px;
 		}
 	}
 
@@ -400,51 +377,58 @@ section#press {
 		} 
 	}
 
+	a {
+		color: white;
+	}
+
 }
 
 
 section#about {
-	.inner {
+	.wrap {
 		max-width: 1220px;
+		margin: 0 auto;
 	}
 
-	.half {
-		padding: 20px;
+	.inner {
+		.half {
+			padding: 20px;
 
-		@include respond-to( 600px ) {
-			float: left;
-			width: 50%;
-		}
+			@include respond-to( 600px ) {
+				float: left;
+				width: 50%;
+			}
 
-		@include respond-to( 768px ){
-			padding: 30px;
-		}
+			@include respond-to( 768px ){
+				padding: 30px;
+			}
 
-		@include respond-to( 768px ){
-			padding: 40px;
-		}
+			@include respond-to( 768px ){
+				padding: 40px;
+			}
 
-		.headshot {
-			width: 320px;
-			height: 320px;
-			border-radius: 50%;
-			margin: 0 auto;
-			overflow: hidden;
+			.headshot {
+				width: 320px;
+				height: 320px;
+				border-radius: 50%;
+				margin: 0 auto;
+				overflow: hidden;
 
-			@include respond-to( 768px ) {
-				width: 375px;
-				height: 375px;
+				@include respond-to( 768px ) {
+					width: 375px;
+					height: 375px;
+				}
 			}
 		}
-	}
 
-	h2 {
-		text-align: center;
-		color: $grey;
-	}
+		h2 {
+			text-align: center;
+			color: $grey;
+		}
 
-	h3 {
-		text-align: center;
+		h3 {
+			text-align: center;
+		}
 	}
 
 	.about-content {

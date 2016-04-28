@@ -184,13 +184,6 @@ get_header();
 		</header>
 		
 		<div class="inner list-styles">
-
-			<div class="amanda-photo">
-				<div class="photo-info">
-					<div class="caption"></div>
-					<div class="photo-credit">Photo: <a href="http://www.andyjanning.com">Andy Janning</a></div>
-				</div>
-			</div>
 			
 			<div class="news">
 				<h4>Some Articles We’ve Written</h4>
@@ -239,7 +232,7 @@ get_header();
 		</header>
 
 		<div class="inner">
-			<div class="group">
+			<div class="wrap group">
 				<div class="half">
 					<div class="headshot">
 						<img src="<?php bloginfo( 'template_url' ) ?>/img/headshot-amanda.jpg" />
@@ -268,7 +261,7 @@ get_header();
 			</div>
 
 			<div class="about-content">
-				<div class="wrap">
+				<div class="about-content-inner">
 					<h2>About TwoScore</h2>
 					<p>TwoScore was founded out of a love for credit unions and the belief that small credit unions are vital to this industry. We know the unique challenges small credit unions face in today's market. TwoScore channels our passion for the industry and the wonderful people within it to help credit unions reach their strategic goals through marketing.</p>
 				</div>
@@ -279,17 +272,26 @@ get_header();
 	</section>
 
 	<section id="connect" class="connect">
-		
+			
 		<header>
 			<h2>Connect</h2>
 		</header>
 
 		<div class="wrap">
 			<div class="inner">
+
+				<div class="amanda-photo">
+					<div class="photo-info">
+						<div class="caption"></div>
+						<div class="photo-credit">Photo: <a href="http://www.andyjanning.com">Andy Janning</a></div>
+					</div>
+				</div>
+
 				<p class="intro">Tell us how we can help your credit union thrive!</p>
 				<div class="grid-row group">
 					<?php print do_shortcode( '[gravityform id="1" title="false" description="false"]' ); ?>
 				</div>
+
 			</div>
 			
 		</div>
