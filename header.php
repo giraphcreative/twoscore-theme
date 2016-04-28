@@ -18,7 +18,7 @@
 	<nav>
 		<button class="menu-toggle">menu</button>
 		<ul>
-			<li><a href="<?php print ( is_front_page() ? '#header' : get_bloginfo( 'home' ) . "?" ) ?>">Home</a></li>
+			<li><a href="<?php print ( is_front_page() ? ( isset( $_REQUEST['scroll'] ? "/" : '#header' ) : get_bloginfo( 'home' ) . "?" ) ?>">Home</a></li>
 			<li><a href="<?php print ( is_front_page() ? '#consulting' : get_bloginfo( 'home' ) . "?scroll=consulting" ) ?>">Consulting</a></li>
 			<li><a href="<?php print ( is_front_page() ? '#results' : get_bloginfo( 'home' ) . "?scroll=results" ) ?>">Results</a></li>
 			<li><a href="<?php print ( is_front_page() ? '#speaking' : get_bloginfo( 'home' ) . "?scroll=speaking" ) ?>">Speaking</a></li>
