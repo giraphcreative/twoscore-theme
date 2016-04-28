@@ -50,13 +50,6 @@ nav {
 
 		li {
 			display: inline;
-			
-			&:first-child a {
-
-				@include respond-to( 1024px ) {
-					width: 16%;
-				}
-			}
 
 			a {
 				@include font-title;
@@ -80,13 +73,17 @@ nav {
 
 				@include respond-to( 769px ) {
 					width: auto;
-					padding: 30px 10px;
+					padding: 30px 5px;
 					float: none;
 					border: 0;
 				}
 
+				@include respond-to( 800px ) {
+					padding: 30px 10px;
+				}
+
 				@include respond-to( 1024px ) {
-					width: 12%;
+					width: 10%;
 				}
 
 				.csstransitions &, 
@@ -105,13 +102,46 @@ nav {
 
 			@include respond-to( 769px ) {
 				&:last-child a {
-					width: 12%;
 					@include font-cursive;
 					text-transform: lowercase;
 					font-size: 30px;
 					letter-spacing: 2px;
 				}
+
+				&:first-child a {
+					width: 8%;
+					text-indent: -1000px;
+					color: transparent;
+					background: url(../img/icon-home.png) center center no-repeat;
+					opacity: .5;
+
+					&:hover {
+						background: lighten( $purple, 5% ) url(../img/icon-home.png) center center no-repeat;
+					}
+				}
 			}
+			@include respond-to( 1024px ) {
+				&:first-child a {
+					width: 8%;
+					text-indent: -1000px;
+					color: transparent;
+					background: url(../img/icon-home.png) center center no-repeat;
+					opacity: .5;
+
+					&:hover {
+						background: lighten( $purple, 5% ) url(../img/icon-home.png) center center no-repeat;
+					}
+				}
+
+				&:nth-child(2) a {
+					width: 16%;
+				}
+				
+				&:nth-child(4) a {
+					width: 14%;
+				}
+			}
+			
 
 
 		}

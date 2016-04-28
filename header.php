@@ -18,6 +18,7 @@
 	<nav>
 		<button class="menu-toggle">menu</button>
 		<ul>
+			<li><a href="<?php print ( !is_front_page() ? get_bloginfo( 'home' ) : '' ) ?>#header">Home</a></li>
 			<li><a href="<?php print ( !is_front_page() ? get_bloginfo( 'home' ) : '' ) ?>#consulting">Consulting</a></li>
 			<li><a href="<?php print ( !is_front_page() ? get_bloginfo( 'home' ) : '' ) ?>#results">Results</a></li>
 			<li><a href="<?php print ( !is_front_page() ? get_bloginfo( 'home' ) : '' ) ?>#speaking">Speaking</a></li>
