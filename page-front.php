@@ -266,6 +266,7 @@ get_header();
 				<p class="intro">Tell us how we can help your credit union thrive!</p>
 				<form id="contact" name="contact">
 					<div class="error text-center"></div>
+					<!--
 					<div class="grid-row group">
 
 						<div class="col6">
@@ -299,6 +300,8 @@ get_header();
 						</div>
 
 					</div>
+					-->
+					<?php print do_shortcode( '[gravityform id="1" title="false" description="false"]' ); ?>
 				</form>
 
 			</div>

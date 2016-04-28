@@ -126,17 +126,27 @@ h4 {
 }
 
 
-input[type=text], textarea {
+input[type=text], textarea, .gform_wrapper input[type=text], .gform_wrapper .ginput_complex input[type=text], .gform_wrapper input[type=url], .gform_wrapper input[type=email], .gform_wrapper textarea {
 	width: 100%;
-	padding: 15px;
+	padding: 15px !important;
 	border: 0;
 	font-size: 14px;
 	-webkit-appearance: none;
 	@include prefix( "border-radius", "0" );
 	@include sans-serif;
+	opacity: .7;
+	transition: opacity 500ms ease-in-out;
+
+	&:focus {
+		opacity: 1;
+	}
 }
 
-textarea {
+.gform_wrapper li {
+	padding: 8px 0;
+}
+
+.gform_wrapper textarea, textarea {
 	height: 150px;
 }
 
