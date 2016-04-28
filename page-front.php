@@ -235,25 +235,44 @@ get_header();
 		
 		<header>
 			<h2>About</h2>
+			<p>Our mission is to help small credit unions thrive and stay relevant, which is something we take to hear with every client relationship.</p>
 		</header>
 
 		<div class="inner">
-
-			<div class="amanda-photo">
-				<div class="photo-info">
-					<div class="caption">Rugby, the office mascot</div>
-					<div class="photo-credit">Photo: <a href="http://www.andyjanning.com">Andy Janning</a></div>
+			<div class="group">
+				<div class="half">
+					<div class="headshot">
+						<img src="<?php bloginfo( 'template_url' ) ?>/img/headshot-amanda.jpg" />
+					</div>
+					<div class="bio">
+						<h2>Amanda</h2>
+						<h3>Founder &amp; President</h3>
+						<p>A credit union veteran, Amanda as many years of marketing experience in credit unions ranging in size from $37 million to $200 million in assets. Her unique approach to marketing and passion for organizational culture and employee engagement has made TwoScore a vital partner of many credit unions across the United States.</p>
+						<p>Amanda is the recipient of many state and national awards, including the Ohio Credit Union League Cutting Edge Marketing Brilliance Award, Trailblazer 40 Below, Crash the GAC, Crash Big.Bright.Minds and she was a finalist in the 2011 CUES Next Top Credit Union Exec competition.</p>
+						<p>When she's not busy helping credit unions succeed, you can find her reading history books, watching her beloved Kentucky Wildcats basketball team, trying out a gourmet recipe, or planning her next travel adventure with her husband, Mike.  As you may have guessed, their favorite place to visit is France.  Don't be surprised if you also see her guest lecturing at a local university, sharing her love of marketing with undergraduate students.</p>
+					</div>
+				</div>
+				<div class="half">
+					<div class="headshot">
+						<img src="<?php bloginfo( 'template_url' ) ?>/img/headshot-liz.jpg" />
+					</div>
+					<div class="bio">
+						<h2>Liz</h2>
+						<h3>AVP, Marketing &amp; Client Services</h3>
+						<p>Liz joined TwoScore in 2016, bringing her ninja skills with technology and out of the box ideas to help our credit union clients take things to the next level.</p>
+						<p>She has worked in credit unions for over five years, and played an integral role growing loans almost 40% during her tenure at a mid-sized credit union. Liz's success is fueled by her love of credit unions' commitment to "people helping people." She is a champion of keeping small to mid-sized credit unions a competitive and thriving force in the financial landscape.</p>
+						<p>Liz has been actively involved in the credit union industry, participating in Crash the GAC, leading a presentation at CUNA’s Community Credit Union &amp; Growth Conference, and serving as chair of the Central Ohio Credit Union Outreach Alliance. In addition to her credit union efforts, Liz is pursuing her Masters of Business Administration at Capital University in Columbus and will complete her degree in August 2016.</p>
+						<p>Outside of credit union-land you’re likely to find Liz hitting up a hip hop dance class, scoping out the Columbus restaurant scene with her husband Zach, training for her next race, reading an inspiring business book, or taking her pup Kobe to the dog park.</p>
+					</div>
 				</div>
 			</div>
 
-			<div class="pad">
-				<p><strong>I founded TwoScore because I love credit unions and believe small credit unions are vital to this industry.</strong> Working with a fantastic group of people throughout my credit union career helped me realize my dream of helping small credit unions thrive and stay relevant.</p>
-				<p>In working for credit unions that range in size from $37 million to $200 million in assets, I learned first hand the unique challenges small credit unions face in today’s market.  TwoScore channels my passion for the credit union mission and the wonderful people in this industry to help credit unions  reach their strategic goals through marketing.</p>
-				<p>I am extremely honored to be the recipient of many state and national awards, including the <em>Ohio Credit Union League Cutting Edge Marketing Brilliance Award</em>, <em>Trailblazer 40 Below</em>, Crash the <em>GAC</em>, Crash <em>Big.Bright.Minds</em>, and a finalist in the <em>2011 CUES Next Top Credit Union Exec</em> competition.</p>
-				<p><strong>Why the name TwoScore?</strong> It was Matthew 14:22-33, the part where Jesus walks on water, that made my mission become clear.  Jesus asked Peter to have faith and not to doubt Him.  In reading further about the life of Peter, the word “forty” is used throughout the Bible as a symbol of faith, and I knew I wanted the name to reflect “40” in some way.  It was my awesome husband who eventually came up with TwoScore.  And I love it because it not only symbolizes this important meaning, but it also represents my love of music, history, and sports.</p>
-				<p>When I’m not busy helping credit unions succeed, you can find me reading, watching Kentucky Wildcats basketball (<em>GO CATS!</em>), trying my hand at a new recipe, traveling, or planning our next trip.</p>
+			<div class="about-content">
+				<div class="wrap">
+					<h2>About TwoScore</h2>
+					<p>TwoScore was founded out of a love for credit unions and the belief that small credit unions are vital to this industry. We know the unique challenges small credit unions face in today's market. TwoScore channels our passion for the industry and the wonderful people within it to help credit unions reach their strategic goals through marketing.</p>
+				</div>
 			</div>
-
 
 		</div>
 
