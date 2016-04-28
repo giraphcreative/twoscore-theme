@@ -202,13 +202,12 @@ get_header();
 					<li><a href="http://www.cuinsight.com/make-a-plan.html">Make a Plan</a></li>
 					<li><a href="http://www.cuinsight.com/10-marketing-myths-that-could-be-costing-your-credit-union.html">10 Marketing Myths That Could Be Costing Your Credit Union</a></li>
 					<li><a href="http://www.cutimes.com/2013/07/17/cooperative-trust-first-sell-marketing-https://www.cuinsight.com/10-things-can-kill-marketing-credit-union.html">Cooperative Trust: First, Sell Marketing Campaign Inside</a></li>
-					<li><a href="https://www.cuinsight.com/what-happens-at-a-successful-strategic-planning-session.html">Cooperative Trust: First, Sell Marketing Campaign Inside</a></li>
-					<li><a href="https://www.cuinsight.com/celebrate-bobs-swim-lessons-credit-union-lessons.html">Cooperative Trust: First, Sell Marketing Campaign Inside</a></li>
-					<li><a href="http://www.cutimes.com/2013/07/17/cooperative-trust-first-sell-marketing-campaign-in?slreturn=1461811297">Cooperative Trust: First, Sell Marketing Campaign Inside</a></li>
-					<li><a href="http://www.cutimes.com/2013/07/17/cooperative-trust-first-sell-marketing-campaign-in?slreturn=1461811297">Cooperative Trust: First, Sell Marketing Campaign Inside</a></li>
-					<li><a href="http://www.cutimes.com/2013/07/17/cooperative-trust-first-sell-marketing-campaign-in?slreturn=1461811297">Cooperative Trust: First, Sell Marketing Campaign Inside</a></li>
-					<li><a href="http://www.cutimes.com/2013/07/17/cooperative-trust-first-sell-marketing-campaign-in?slreturn=1461811297">Cooperative Trust: First, Sell Marketing Campaign Inside</a></li>
-					<li><a href="http://www.cutimes.com/2013/07/17/cooperative-trust-first-sell-marketing-campaign-in?slreturn=1461811297">Cooperative Trust: First, Sell Marketing Campaign Inside</a></li>
+					<li><a href="https://www.cuinsight.com/10-things-can-kill-marketing-credit-union.html">10 things that can kill marketing at your credit union</a></li>
+					<li><a href="https://www.cuinsight.com/what-happens-at-a-successful-strategic-planning-session.html">What happens at a successful strategic planning session</a></li>
+					<li><a href="https://www.cuinsight.com/celebrate-bobs-swim-lessons-credit-union-lessons.html">Celebrate the “bobs” at your credit union</a></li>
+					<li><a href="https://www.cuinsight.com/is-inactivity-killing-your-credit-union.html">Is inactivity killing your credit union?</a></li>
+					<li><a href="https://www.cuinsight.com/the-two-secrets-great-leaders-know.html">The two secrets great leaders know</a></li>
+					<li><a href="https://www.cuinsight.com/boost-employee-engagement-better-marketing.html">Boost employee engagement for better marketing</a></li>
 				</ul>
 			</div>
 			<div class="interviews">
