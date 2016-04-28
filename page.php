@@ -14,9 +14,7 @@ get_header();
 			while ( have_posts() ) : the_post(); 
 				?>
 				<h1><?php the_title(); ?></h1>
-				<div class="post-meta">
-					Posted by <?php the_author_link() ?> <span>on <?php the_date() ?></span>
-				</div>
+				<div class="post-meta"></div>
 				<?php
 				the_content();
 			endwhile;
