@@ -141,7 +141,7 @@ get_header();
 		
 		<header>
 			<h2>Speaking</h2>
-			<p>We share our expertise in marketing strategy, organizational culture, branding, and strategic planning with credit union partners all across the country.  Don't be surprised if you also see me guest lecturing at a local university sharing my love of marketing and credit unions with undergraduate marketing students.</p>
+			<p>We share our expertise in marketing strategy, organizational culture, branding, and strategic planning with credit union partners all across the country.</p>
 		</header>
 
 		<div class="topics list-styles">
@@ -228,7 +228,7 @@ get_header();
 		
 		<header>
 			<h2>About</h2>
-			<p>Our mission is to help small credit unions thrive and stay relevant, which is something we take to hear with every client relationship.</p>
+			<p>Our mission is to help small credit unions thrive and stay relevant, which is something we take to heart with every client relationship.</p>
 		</header>
 
 		<div class="inner">
