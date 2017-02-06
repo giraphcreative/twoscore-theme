@@ -209,3 +209,34 @@
 	}
 }
 
+
+.pagination {
+	padding: 25px 0 15px;
+	text-align: center;
+	font-size: 15px;
+	line-height: 15px;
+	@include font-bold;
+	border-top: 2px dotted lighten( $grey, 40% );
+
+	a {
+		padding: 7px 12px;
+		background: lighten( $grey, 30% );
+		color: white;
+		text-decoration: none;
+		display: inline-block;
+		border: none;
+
+		&:hover {
+			background: lighten( $grey, 35% );
+		}
+	}
+
+	.current {
+		padding: 7px 12px;
+		display: inline-block;
+		background: lighten( $grey, 25% );
+		color: $grey;
+	}
+}
+
+

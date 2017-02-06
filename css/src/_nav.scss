@@ -134,11 +134,15 @@ nav.main {
 				}
 
 				&:nth-child(2) a {
-					width: 16%;
+					width: 12%;
 				}
 				
 				&:nth-child(4) a {
-					width: 14%;
+					width: 8%;
+				}
+				
+				&:nth-child(6) a, &:nth-child(7) a {
+					width: 8%;
 				}
 			}
 		}

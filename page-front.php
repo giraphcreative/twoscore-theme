@@ -10,7 +10,7 @@ get_header();
 	<section id="consulting" class="what">
 		
 		<header>
-			<h2>Consulting</h2>
+			<h2>What We Do</h2>
 			<p>TwoScore offers a variety of tailored solutions for credit unions to maximize their marketing efforts and develop their teams.</p>
 		</header>
 
@@ -137,50 +137,10 @@ get_header();
 	</section>
 
 
-	<section id="speaking" class="who">
+	<section id="blog" class="work">
 		
 		<header>
-			<h2>Speaking</h2>
-			<p>We share our expertise in marketing strategy, organizational culture, branding, and strategic planning with credit union partners all across the country.</p>
-		</header>
-
-		<div class="topics list-styles">
-			<h4>Topics Include:</h4>
-			<ul>
-				<li>Rock Solid Goal Setting</li>
-				<li>Bringing Your Culture to Life</li>
-				<li>Building a Winning Marketing Plan</li>
-				<li>Reading and Understanding Your Credit Union’s Financials</li>
-				<li>Finding Your Inner Marketing Rockstar</li>
-				<li>Are My Marketing Efforts Successful?</li>
-				<li>Strategic Planning Sessions</li>
-			</ul>
-		</div>
-
-		<div class="quotes">
-			<p>“Amanda McMeans of TwoScore is a great resource for small credit unions that are looking to take their marketing to the next level. Her understanding of the credit union movement and the challenges small credit unions face, combined with her marketing expertise, are a combination that set her apart.”  
-			<span>- Sarah Dale Harmon, AVP Marketing, Members Exchange Credit Union</span></p>
-
-			<p>Amanda was very knowledgeable and did a very good job 
-			in getting everyone engaged in the whole process.” 
-			<span>- Board member, Education First Credit Union</span></p>
-		</div>
-			
-		<div class="download">
-			<a href="<?php bloginfo( 'template_url' ) ?>/documents/speaking-topics.pdf">Download our Speaking Topics</a>
-		</div>
-
-		<div class="dont-see">
-			<p><a href="mailto:amanda@twoscore.biz">Don’t see a topic listed?</a> We would love the opportunity to create a custom program based on your objectives and audience.</p>
-		</div>
-
-	</section>
-
-
-	<section id="press" class="work">
-		
-		<header>
-			<h2>Press</h2>
+			<h2>Blog</h2>
 		</header>
 		
 		<div class="inner list-styles">
@@ -202,43 +162,47 @@ get_header();
 				}				
 			}
 			?>
+			
+		</div>
 
-			<!--
-			<div class="news">
-				<h4>Some Articles We’ve Written</h4>
-				<ul>
-					<li><a href="https://www.cuinsight.com/four-things-to-do-when-your-marketing-isnt-working.html">4 Things To Do When Your Marketing Isn’t Working</a></li>
-					<li><a href="https://www.cuinsight.com/five-things-every-marketer-should-know.html">Five Things Every Marketer Should Know</a></li>
-					<li><a href="https://www.cuinsight.com/march-madness-credit-union-style.html">March Madness…Credit Union Style</a></li>
-					<li><a href="http://www.cuinsight.com/creating-your-museum.html">Creating Your Museum</a></li>
-					<li><a href="http://www.cuinsight.com/make-a-plan.html">Make a Plan</a></li>
-					<li><a href="http://www.cuinsight.com/10-marketing-myths-that-could-be-costing-your-credit-union.html">10 Marketing Myths That Could Be Costing Your Credit Union</a></li>
-					<li><a href="http://www.cutimes.com/2013/07/17/cooperative-trust-first-sell-marketing-https://www.cuinsight.com/10-things-can-kill-marketing-credit-union.html">Cooperative Trust: First, Sell Marketing Campaign Inside</a></li>
-					<li><a href="https://www.cuinsight.com/10-things-can-kill-marketing-credit-union.html">10 things that can kill marketing at your credit union</a></li>
-					<li><a href="https://www.cuinsight.com/what-happens-at-a-successful-strategic-planning-session.html">What happens at a successful strategic planning session</a></li>
-					<li><a href="https://www.cuinsight.com/celebrate-bobs-swim-lessons-credit-union-lessons.html">Celebrate the “bobs” at your credit union</a></li>
-					<li><a href="https://www.cuinsight.com/is-inactivity-killing-your-credit-union.html">Is inactivity killing your credit union?</a></li>
-					<li><a href="https://www.cuinsight.com/the-two-secrets-great-leaders-know.html">The two secrets great leaders know</a></li>
-					<li><a href="https://www.cuinsight.com/boost-employee-engagement-better-marketing.html">Boost employee engagement for better marketing</a></li>
-				</ul>
-			</div>
-			<div class="interviews">
-				<h4>Interviews &amp; Articles About Us</h4>
-				<ul>
-					<li><a href="http://www.cues.org/article/view/id/Next-Gen-Leaders-Amanda-Thomas">Next Gen Leaders: Amanda Thomas</a></li>
-					<li><a href="http://www.cutimes.com/2011/03/02/stick-to-the-fundamentals-and-reignite-your-passio">Stick to the Fundamentals and Reignite Your Passion</a></li>
-					<li><a href="http://www.cubroadcast.com/episodes/69-a-different-angle-on-marketing-with-members-first-credit-unions-amanda-thomas">A Different Angle on Marketing with members first (CU Broadcast) </a></li>
-				</ul>
-			</div>
-			<div class="awards">
-				<h4>Awards</h4>
-				<ul>
-					<li><a href="http://www.cutimes.com/2011/06/13/amanda-thomas-brings-daredevil-skills-to-cu-market">Credit Union Times Trailblazer 40 Below</a></li>
-					<li><a href="Next Top Credit Union Exec">Next Top Credit Union Executive</a></li>
-				</ul>
-			</div>
-			-->
+	</section>
 
+
+	<section id="speaking" class="who">
+		
+		<header>
+			<h2>Speaking</h2>
+			<p>We share our expertise in marketing strategy, organizational culture, branding, and strategic planning with credit union partners all across the country.</p>
+		</header>
+
+		<div class="topics list-styles">
+			<h4>Topics Include:</h4>
+			<ul>
+				<li>Rock Solid Goal Setting</li>
+				<li>Bringing Your Culture to Life</li>
+				<li>Building a Winning Marketing Plan</li>
+				<li>Reading and Understanding Your Credit Union’s Financials</li>
+				<li>Finding Your Inner Marketing Rockstar</li>
+				<li>Are My Marketing Efforts Successful?</li>
+				<li>Strategic Planning Sessions</li>
+			</ul>
+		</div>
+
+		<div class="quotes">
+			<p>"Amanda McMeans of TwoScore is a great resource for small credit unions that are looking to take their marketing to the next level. Her understanding of the credit union movement and the challenges small credit unions face, combined with her marketing expertise, are a combination that set her apart." 
+			<span>- Sarah Dale Harmon, AVP Marketing, Members Exchange Credit Union</span></p>
+
+			<p>"Amanda was very knowledgeable and did a very good job 
+			in getting everyone engaged in the whole process."
+			<span>- Board member, Education First Credit Union</span></p>
+		</div>
+			
+		<div class="download">
+			<a href="<?php bloginfo( 'template_url' ) ?>/documents/speaking-topics.pdf">Download our Speaking Topics</a>
+		</div>
+
+		<div class="dont-see">
+			<p><a href="mailto:amanda@twoscore.biz">Don’t see a topic listed?</a> We would love the opportunity to create a custom program based on your objectives and audience.</p>
 		</div>
 
 	</section>
@@ -248,7 +212,7 @@ get_header();
 		
 		<header>
 			<h2>About</h2>
-			<p>Our mission is to help small credit unions thrive and stay relevant, which is something we take to heart with every client relationship.</p>
+			<p>TwoScore was founded out of a love for credit unions and the belief that small credit unions are vital to this industry. We know the unique challenges small credit unions face in today's market. TwoScore channels our passion for the industry and the wonderful people within it to help credit unions reach their strategic goals through marketing.</p>
 		</header>
 
 		<div class="inner">
@@ -260,7 +224,7 @@ get_header();
 					<div class="bio">
 						<h2>Amanda</h2>
 						<h3>Founder &amp; President</h3>
-						<p>A credit union veteran, Amanda as many years of marketing experience in credit unions ranging in size from $37 million to $200 million in assets. Her unique approach to marketing and passion for organizational culture and employee engagement has made TwoScore a vital partner of many credit unions across the United States.</p>
+						<p>A credit union veteran, Amanda has many years of marketing experience in credit unions ranging in size from $37 million to $200 million in assets. Her unique approach to marketing and passion for organizational culture and employee engagement has made TwoScore a vital partner of many credit unions across the United States.</p>
 						<p>Amanda is the recipient of many state and national awards, including the Ohio Credit Union League Cutting Edge Marketing Brilliance Award, Trailblazer 40 Below, Crash the GAC, Crash Big.Bright.Minds and she was a finalist in the 2011 CUES Next Top Credit Union Exec competition.</p>
 						<p>When she's not busy helping credit unions succeed, you can find her reading history books, watching her beloved Kentucky Wildcats basketball team, trying out a gourmet recipe, or planning her next travel adventure with her husband, Mike.  As you may have guessed, their favorite place to visit is France.  Don't be surprised if you also see her guest lecturing at a local university, sharing her love of marketing with undergraduate students.</p>
 					</div>
@@ -277,13 +241,6 @@ get_header();
 						<p>Liz has been actively involved in the credit union industry, participating in Crash the GAC, leading a presentation at CUNA’s Community Credit Union &amp; Growth Conference, and serving as chair of the Central Ohio Credit Union Outreach Alliance. In addition to her credit union efforts, Liz is pursuing her Masters of Business Administration at Capital University in Columbus and will complete her degree in August 2016.</p>
 						<p>Outside of credit union-land you’re likely to find Liz hitting up a hip hop dance class, scoping out the Columbus restaurant scene with her husband Zach, training for her next race, reading an inspiring business book, or taking her pup Kobe to the dog park.</p>
 					</div>
-				</div>
-			</div>
-
-			<div class="about-content">
-				<div class="about-content-inner">
-					<h2>About TwoScore</h2>
-					<p>TwoScore was founded out of a love for credit unions and the belief that small credit unions are vital to this industry. We know the unique challenges small credit unions face in today's market. TwoScore channels our passion for the industry and the wonderful people within it to help credit unions reach their strategic goals through marketing.</p>
 				</div>
 			</div>
 

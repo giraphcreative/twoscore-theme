@@ -19,12 +19,12 @@
 		<button class="menu-toggle">menu</button>
 		<ul>
 			<li><a href="<?php print ( is_front_page() ? ( isset( $_REQUEST['scroll'] ) ? "/" : '#header' ) : get_bloginfo( 'home' ) . "?" ) ?>">Home</a></li>
-			<li><a href="<?php print ( is_front_page() ? '#consulting' : get_bloginfo( 'home' ) . "?scroll=consulting" ) ?>">Consulting</a></li>
+			<li><a href="<?php print ( is_front_page() ? '#consulting' : get_bloginfo( 'home' ) . "?scroll=consulting" ) ?>">What We Do</a></li>
 			<li><a href="<?php print ( is_front_page() ? '#results' : get_bloginfo( 'home' ) . "?scroll=results" ) ?>">Results</a></li>
+			<li><a href="<?php print ( is_front_page() ? '#blog' : get_bloginfo( 'home' ) . "?scroll=blog" ) ?>">Blog</a></li>
 			<li><a href="<?php print ( is_front_page() ? '#speaking' : get_bloginfo( 'home' ) . "?scroll=speaking" ) ?>">Speaking</a></li>
-			<li><a href="<?php print ( is_front_page() ? '#press' : get_bloginfo( 'home' ) . "?scroll=press" ) ?>">Press</a></li>
-			<li><a href="<?php bloginfo( 'home' ) ?>/blog"<?php print ( !is_front_page() ? ' class="current"' : '' ) ?>>Blog</a></li>
 			<li><a href="<?php print ( is_front_page() ? '#about' : get_bloginfo( 'home' ) . "?scroll=about" ) ?>">About</a></li>
+			<li><a href="<?php print ( is_front_page() ? '#values' : get_bloginfo( 'home' ) . "?scroll=values" ) ?>">Values</a></li>
 			<li><a href="<?php print ( is_front_page() ? '#connect' : get_bloginfo( 'home' ) . "?scroll=connect" ) ?>">Connect</a></li>
 		</ul>
 	</nav>

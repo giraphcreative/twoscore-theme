@@ -28,9 +28,11 @@ get_header();
 			</article>
 			<?php
 		endwhile;
-
-		the_posts_pagination( array( 'mid_size'  => 2 ) );
 		?>
+
+			<div class="pagination">
+				<?php pagination(); ?>
+			</div>
 		</section>
 
 	</section><!-- #primary -->
