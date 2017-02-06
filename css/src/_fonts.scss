@@ -1,6 +1,6 @@
 
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,600italic,400italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,300italic,400italic,600italic);
 
 
 @font-face {
@@ -93,6 +93,11 @@
 	font-family: "Open Sans", sans-serif;
 }
 
+@mixin font-light {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+}
+
 @mixin font-bold {
 	font-family: "Open Sans", sans-serif;
 	font-weight: bold;
@@ -100,6 +105,12 @@
 
 @mixin font-italic {
 	font-family: "Open Sans", sans-serif;
+	font-style: italic;
+}
+
+@mixin font-light-italic {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
 	font-style: italic;
 }
 

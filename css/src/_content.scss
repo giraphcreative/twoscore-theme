@@ -5,7 +5,6 @@
 	margin: 0 auto;
 	padding: 20px 20px 40px;
 	line-height: 2em;
-	@extend .list-styles;
 
 	@include respond-to( 768px ) {
 		padding: 40px 30px 60px;
@@ -63,6 +62,65 @@
 		}
 	}
 
+	blockquote {
+		@include font-light-italic;
+		padding: 15px 20px;
+		font-size: 1.4em;
+		color: lighten( $grey, 20% );
+
+		@include respond-to( 768px ) {
+			padding: 20px 40px;
+		}
+	}
+
+	ul {
+		list-style-type: none;
+
+		li {
+			position: relative;
+
+			&:before {
+	            content: "•";
+	            counter-increment: item;
+	            color: lighten( $grey, 20% );
+	            position: absolute;
+				left: -27px;
+				top: 5px;
+	        }
+		}
+	}
+
+	ol {
+		list-style-type: none;
+		counter-reset: item;
+
+		li {
+			position: relative;
+
+			&:before {
+	            content: counter(item) ") ";
+	            counter-increment: item;
+	            color: lighten( $grey, 20% );
+	            position: absolute;
+				left: -30px;
+				top: 5px;
+	        }
+		}
+
+	}
+
+	ol, ul {
+		padding: 5px 0 5px 50px;
+
+		li {
+			padding: 5px 0;
+		}
+	}
+
+	.gform_wrapper ul li.gfield {
+		padding: 8px 0;
+	}
+
 	article {
 		padding: 20px 0;
 		border-top: 2px dotted lighten( $grey, 40% );
@@ -83,14 +141,67 @@
 	}
 
 	img {
+		max-width: 100%;
+		margin: 20px 0;
+		box-shadow: 0 0 25px rgba( black, .15 );
+		border: 1px solid rgba( black, .2 );
+
 		&.alignright {
-			float: right;
-			margin: 0 0 15px 15px;
+			@include respond-to( 480px ) {			
+				float: right;
+				margin: 0 0 15px 15px;
+				max-width: 50%;
+			}
+
+			@include respond-to( 768px ) {
+				margin: 0 -50px 25px 25px;
+				max-width: 400px;
+			}
+
+			@include respond-to( 900px ) {
+				margin: 0 -100px 25px 25px;
+				max-width: 475px;
+			}
+
+			@include respond-to( 1024px ) {
+				margin: 0 -175px 25px 25px;
+				max-width: 525px;
+			}
+
+			@include respond-to( 1220px ) {
+				margin: 0 -300px 25px 25px;
+				max-width: 650px;
+			}
 		}
+
 		&.alignleft {
-			float: left;
-			margin: 0 15px 15px 0;
+			@include respond-to( 480px ) {			
+				float: left;
+				margin: 0 15px 15px 0;
+				max-width: 50%;
+			}
+
+			@include respond-to( 768px ) {
+				margin: 0 25px 25px -50px;
+				max-width: 400px;
+			}
+
+			@include respond-to( 900px ) {
+				margin: 0 25px 25px -100px;
+				max-width: 475px;
+			}
+
+			@include respond-to( 1024px ) {
+				margin: 0 25px 25px -175px;
+				max-width: 525px;
+			}
+
+			@include respond-to( 1220px ) {
+				margin: 0 25px 25px -300px;
+				max-width: 650px;
+			}
 		}
+
 		&.aligncenter {
 			display: block;
 			margin: 0 auto;

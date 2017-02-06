@@ -104,32 +104,6 @@ h4 {
 	font-size: 1.2em;
 }
 
-
-.list-styles {
-	ul {
-	    list-style: none;
-	    margin: 0;
-
-	    li {
-	    	position: relative;
-		    padding: 6px 10px 6px 25px;
-
-			&:before {
-				content: "•";
-				position: absolute;
-				left: 5px;
-				top: 6px;
-				color: lighten( $grey, 40% );
-			}
-	    }
-	}
-
-	.gform_wrapper ul li.gfield {
-		padding: 8px 0;
-	}
-}
-
-
 input[type=text], textarea, .gform_wrapper input[type=text], .gform_wrapper .ginput_complex input[type=text], .gform_wrapper input[type=url], .gform_wrapper input[type=email], .gform_wrapper textarea {
 	width: 100%;
 	padding: 15px !important;
@@ -322,6 +296,7 @@ section#press {
 		background: $purple url(../img/bg-tower.jpg) bottom center no-repeat;
 		background-size: cover;
 		padding: 20px;
+		@include clearfix;
 
 		@include respond-to( 768px ) {		
 			padding: 30px 20% 50px 30px;
@@ -379,6 +354,36 @@ section#press {
 
 	a {
 		color: white;
+	}
+
+	.entry {
+		clear: left;
+		padding: 10px 0;
+		@include clearfix;
+		
+		.thumbnail {
+			img {
+				height: auto !important;
+
+			}	
+
+			@include respond-to( 768px ) {
+				float: left;
+				width: 25%;
+				padding: 0 20px 20px 0;
+			}
+		}
+
+		.entry-content {
+			@include respond-to( 768px ) {
+				float: left;
+				width: 75%;
+
+				h3 {
+					padding-top: 0;
+				}
+			}
+		}
 	}
 
 }

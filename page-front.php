@@ -185,6 +185,25 @@ get_header();
 		
 		<div class="inner list-styles">
 			
+			<?php
+			$wp_query = new WP_Query( array( 'posts_per_page' => 3 ) );
+			if ( have_posts() ) {
+				while ( have_posts() ) { the_post(); ?>
+				<div class="entry">
+					<div class="thumbnail">
+						<?php the_post_thumbnail() ?>
+					</div>
+					<div class="entry-content">
+						<h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
+						<?php the_excerpt(); ?>
+					</div>
+				</div>
+					<?php
+				}				
+			}
+			?>
+
+			<!--
 			<div class="news">
 				<h4>Some Articles We’ve Written</h4>
 				<ul>
@@ -218,6 +237,7 @@ get_header();
 					<li><a href="Next Top Credit Union Exec">Next Top Credit Union Executive</a></li>
 				</ul>
 			</div>
+			-->
 
 		</div>
 

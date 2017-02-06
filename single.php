@@ -21,6 +21,8 @@ get_header();
 					Posted by <?php the_author_link() ?> <span>on <?php the_date() ?></span>
 				</div>
 				<?php
+				the_post_thumbnail( 'square' );
+
 				the_content();
 			endwhile;
 		endif;

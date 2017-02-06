@@ -1,6 +1,9 @@
 
 jQuery(document).ready(function( $ ) {
 
+	$( 'img' ).removeAttr( 'width' ).removeAttr( 'height' );
+
+
 	if ( $( 'body' ).hasClass( 'home' ) ) {
 
 		// set up some variables.
