@@ -65,6 +65,7 @@ nav.main {
 				line-height: 16px;
 				font-size: 18px;
 				text-transform: uppercase;
+				white-space: nowrap;
 
 				@include respond-to( 500px ) {
 					width: 33.3333%;

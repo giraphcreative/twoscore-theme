@@ -210,6 +210,27 @@
 }
 
 
+.blog-listing {
+	article {
+		img {
+			max-width: 100%;
+
+			@include respond-to( 480px ) {
+				max-width: 30%;
+				float: right;
+				margin: 0 0 15px 15px;
+			}
+		}
+
+		p.meta {
+			color: rgba( black, .4 );
+			font-style: italic;
+			font-size: .9em;
+		}
+	}
+}
+
+
 .pagination {
 	padding: 25px 0 15px;
 	text-align: center;

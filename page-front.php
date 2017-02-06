@@ -156,12 +156,15 @@ get_header();
 					<div class="entry-content">
 						<h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
 						<?php the_excerpt(); ?>
+						<p class="meta">Posted by <?php the_author_link() ?> <span>on <?php the_date() ?></span></p>
 					</div>
 				</div>
 					<?php
 				}				
 			}
 			?>
+
+			<div class="read-more"><a href="/blog">All Blog Entries &raquo;</a></div>
 			
 		</div>
 

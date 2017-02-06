@@ -13,13 +13,9 @@ get_header();
 			<h2>Blog</h2>
 		</header>
 		<section class="main-content blog-listing">
-		<?php
-		if ( is_search() ) {
-			?><h2>Search Results for <span>'<?php print $_REQUEST["s"]; ?>'</span></h2><?php
-		} else {
-			?><h2>Recent Posts</h2><?php
-		}
+			<h2>Posts by <?php the_author() ?></h2>
 
+		<?php
 		while ( have_posts() ) : the_post();
 			?>
 			<article>
