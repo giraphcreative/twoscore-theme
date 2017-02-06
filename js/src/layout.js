@@ -45,7 +45,7 @@ jQuery(document).ready(function( $ ) {
 
 			// set project heights
 			set_shutter_heights = function() {
-				shutter = $(".shutter"),
+				shutter = $(".shutter:not(.square)"),
 				shutter_caption = $(".shutter .caption"),
 				shutter_width = shutter.width(),
 				shutter_end_height = shutter_width - 

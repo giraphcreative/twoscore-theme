@@ -455,6 +455,62 @@ section#about {
 }
 
 
+section#values {
+	.inner {
+		text-align: center;
+		@include font-title;
+
+		.values-content {
+			padding: 20px;
+		}
+
+		.vision {
+			@include font-cursive;
+			font-size: 2.2em;
+			color: $purple;
+			padding: 20px 0 30px;
+		}
+
+		.boxes {
+			@include respond-to( 670px ) {
+				margin: 0 auto;
+				width: 640px;
+			}
+
+			@include respond-to( 960px ) {
+				margin: 0 auto;
+				width: 960px;
+			}
+		}
+
+		.final {
+			display: inline-block;
+			width: 310px;
+			height: 310px;
+			background: url(../img/values-11.png) center center no-repeat;
+			background-size: cover;
+			margin: 5px 5px 30px;
+
+			@include respond-to( 670px ) {
+				float: left;
+				width: 630px;
+			}
+
+			h4 {
+				padding: 125px 20px;
+				font-size: 1.6em;
+				color: $purple;
+
+				@include respond-to( 670px ) {
+					font-size: 2.2em;
+					padding: 100px 80px;
+				}
+			}
+		}
+	}
+}
+
+
 .footer-border {
 	background: url(../img/bg-checkers.png) center center no-repeat;
 	background-size: cover;
@@ -513,10 +569,9 @@ footer {
 
 
 .shutter {
-	margin-bottom: 30px;
 	text-align: center;
 	position: relative;
-	margin: 15px 1%;
+	margin: 15px;
 	overflow: hidden;
 	background: $purple;
 	background-size: cover;
@@ -539,7 +594,41 @@ footer {
 	}
 	*/
 
+	&.square {
+		border-radius: 0;
+		background: white;
+		margin: 5px;
+		width: 310px;
+		height: 310px;
+
+		@include respond-to( 670px ) {
+			float: left;
+		}
+
+		h3, h4 {
+			@include font-cursive;
+			font-size: 3em;
+		}
+
+		.caption {
+			color: $grey;
+			padding: 20px;
+			text-align: left;
+
+			.small {
+				font-size: .7em;
+			}
+		}
+
+		.no-touch &:hover, &.open {
+			img {
+				border-radius: 0;
+			}
+		}
+	}
+
 	& img {
+		display: block;
 		width: 100%;
 		position: absolute;
 		top: 0;

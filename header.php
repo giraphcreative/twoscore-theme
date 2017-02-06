@@ -12,10 +12,10 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
 	<?php wp_head(); ?>
-	<link href="<?php bloginfo( "template_url" ) ?>/css/main.css?v=2" rel="stylesheet" type="text/css">
+	<link href="<?php bloginfo( "template_url" ) ?>/css/main.css?v=3" rel="stylesheet" type="text/css">
 </head>
 <body <?php body_class(); ?>>
-	<nav>
+	<nav class="main">
 		<button class="menu-toggle">menu</button>
 		<ul>
 			<li><a href="<?php print ( is_front_page() ? ( isset( $_REQUEST['scroll'] ) ? "/" : '#header' ) : get_bloginfo( 'home' ) . "?" ) ?>">Home</a></li>

@@ -291,6 +291,133 @@ get_header();
 
 	</section>
 
+
+	<section id="values" class="what">
+		
+		<header>
+			<h2>Values</h2>
+		</header>
+
+		<div class="inner">
+			<div class="values-content">
+				<p class="vision">our vision - to inspire credit union leaders nationwide.</p>
+				<h3>Our Mission</h3>
+				<p>To help credit unions thrive by providing invaluable solutions they can afford while inspiring and empowering their leaders and future leaders to take the industry to new heights. </p>
+			</div>
+
+			<div class="boxes">
+
+				<div class="shutter square">
+					<img src="<?php bloginfo( 'template_url' ) ?>/img/values-1.png">
+					<h4>accountability breeds success</h4>
+					<div class="caption">
+						<p><strong>We believe accountability is a crucial part of success.</strong></p>
+						<p><em>"Accountability breeds response-ability" – Steven R. Covey</em></p>
+						<p class="small">Because we are entrepreneurs, accountability is one of our most closely-held values and takes many different forms. First, we’re accountable to ourselves by striving every day to reach our personal and professional goals. We’re also accountable to our clients by doing what we say we will when we say we’ll do it in order to be a dependable resource for them. Lastly, we bring accountability to our partnerships by holding our clients accountable to their goals, plans, and vision for the future.</p>
+					</div>
+				</div>
+
+				<div class="shutter square">
+					<img src="<?php bloginfo( 'template_url' ) ?>/img/values-2.png">
+					<h4>collaboration</h4>
+					<div class="caption">
+						<p><strong>We believe success involves collaboration.</strong></p>
+						<p><em>"The achievements of an organization are the results of the combined effort of each individual" – Vince Lombardi</em></p>
+						<p class="small">There is no silver bullet to success. We love working with credit unions that aren’t afraid to roll up their sleeves and are as committed to doing the hard work as we are. This philosophy also extends to business partners and trade organizations, as collaboration makes us stronger and helps the entire industry move forward.</p>
+					</div>
+				</div>
+
+				<div class="shutter square">
+					<img src="<?php bloginfo( 'template_url' ) ?>/img/values-3.png">
+					<h4>empowering leaders</h4>
+					<div class="caption">
+						<p><strong>We believe in empowering the leaders of today and tomorrow.</strong></p>
+						<p><em>"If your actions inspire others to dream more, learn more, do more and become more, you are a leader." – John Quincy Adams</em></p>
+						<p class="small">Our partnerships are so much more than providing marketing insight. CEOs and executives of small credit unions wear many hats, and through these relationships we end up wearing many hats ourselves including coach, mentor, and trusted advisor. The end results of this work are increased time and revenue, which allow our clients more freedom to lead their credit unions to success.</p>
+					</div>
+				</div>
+
+				<div class="shutter square">
+					<img src="<?php bloginfo( 'template_url' ) ?>/img/values-4.png">
+					<h4>dream big</h4>
+					<div class="caption">
+						<p><strong>We believe in dreaming big.</strong></p>
+						<p><em>"The future belongs to those who believe in the beauty of their dreams." – Eleanor Roosevelt </em></p>
+						<p class="small">TwoScore was born from a dream and the belief that you can accomplish anything with passion and hard work. Our company is made better through employees supporting and encouraging each other to achieve their dreams. This encouragement to dream big extends to our clients as well, as their smaller size should not be perceived as a roadblock for them to enhance their members’ experience and improve their financial well-being.</p>
+					</div>
+				</div>
+
+				<div class="shutter square">
+					<img src="<?php bloginfo( 'template_url' ) ?>/img/values-5.png">
+					<h4>results marketing</h4>
+					<div class="caption">
+						<p><strong>We believe marketing gets results. </strong></p>
+						<p><em>"You may never know what results come from your action. But if you do nothing, there will be no result." – Gandhi</em></p>
+						<p class="small">We treat every dollar of our clients’ budgets as if it were our own. By approaching marketing from a financial perspective, it keeps our clients’ brands alive, aligns everyone in the organization, helps them stay relevant to members, and ensures success in the form of 200%, 300%, 500%, and even higher ROI percentages. It’s those results that allow our clients to thrive, innovate, and continually make an impact in the lives of their members and those in the community.</p>
+					</div>
+				</div>
+
+				<div class="shutter square">
+					<img src="<?php bloginfo( 'template_url' ) ?>/img/values-6.png">
+					<h4>health and balance</h4>
+					<div class="caption">
+						<p><strong>We believe the more balanced and healthy we are, the better we are for our clients, personal relationships, and ourselves.</strong></p>
+						<p><em>"I believe that being successful means having a balance of success stories across the many areas of your life. You can’t truly be considered successful in your business life if your home life is in shambles." – Zig Ziglar</em></p>
+						<p class="small">Time away from the office is mandatory at TwoScore. Whether it’s taking time to work out regularly or completely unplugging on a vacation to recharge, we are able to be the best versions of ourselves by making health, family, and balance a priority. This practice ensures the fresh ideas and high energy that we bring to every client interaction.</p>
+					</div>
+				</div>
+
+				<div class="shutter square">
+					<img src="<?php bloginfo( 'template_url' ) ?>/img/values-7.png">
+					<h4>relationships come first</h4>
+					<div class="caption">
+						<p><strong>We believe our relationship with our clients comes above all else.</strong></p>
+						<p><em>"Get closer than ever to your customers. So close that you tell them what they need well before they realize it themselves." – Steve Jobs</em></p>
+						<p class="small">We understand that small credit unions especially want and need strong relationships with their vendor partners. While we do offer valuable marketing expertise to our clients, it is the strong relationships we develop that are invaluable. We strive to delight our clients with regular communication, support, inspiration, and showing them the results of our collaborative efforts.  This helps us continually innovate, improve, and identify opportunities for sustainable success. </p>
+					</div>
+				</div>
+
+				<div class="shutter square">
+					<img src="<?php bloginfo( 'template_url' ) ?>/img/values-8.png">
+					<h4>choose gratitude</h4>
+					<div class="caption">
+						<p><strong>We believe in choosing gratitude.</strong></p>
+						<p><em>"“Gratitude opens the door to the power, the wisdom, the creativity of the universe. You open the door through gratitude." – Deepak Chopra</em></p>
+						<p class="small">We believe gratitude is the catalyst for the kind of positive thinking that changes the world. Starting each day thankful for the opportunity to help credit unions and pursue our dreams gives us the optimistic attitude and vivacious energy that inspires our clients and is contagious to the world around us.</p>
+					</div>
+				</div>
+ 
+				<div class="shutter square">
+					<img src="<?php bloginfo( 'template_url' ) ?>/img/values-9.png">
+					<h4>personal development</h4>
+					<div class="caption">
+						<p><strong>We believe in the importance of personal development.</strong></p>
+						<p><em>I am not afraid of storms for I am learning how to sail my ship." - Louisa May Alcott</em></p>
+						<p class="small">Personal development is the foundation on which our business is built. We believe that if we’re not growing every day, we’re falling behind for our clients and ourselves. To us, personal development means always challenging ourselves to step outside our comfort zones and being curious about everything around us. From learning French and pursuing an MBA to learning to become a digital video guru and mastering photography, our constant thirst for knowledge gives us the ability to tackle projects from a unique perspective.</p>
+					</div>
+				</div>
+ 
+				<div class="shutter square">
+					<img src="<?php bloginfo( 'template_url' ) ?>/img/values-10.png">
+					<h4>focus on strength</h4>
+					<div class="caption">
+						<p><strong>We believe in focusing on your strengths.</strong></p>
+						<p><em>"Everybody is a genius. But if you judge a fish by its ability to climb a tree, it will live its whole life believing that it is stupid." – Albert Einstein</em></p>
+						<p class="small">We believe greatness occurs when people maximize their unique gifts and talents, not when they magnify their weaknesses. We see this in our industry daily – the credit unions that know where they excel instead of trying to be all things to all people are the ones thriving in the market. That’s why we seek to build an environment where TwoScore thrives from the individual expertise of our team members making us collectively stronger for our clients. </p>
+					</div>
+				</div>
+			
+				<div class="final">
+					<h4>We believe these 10 things to be true.</h4>
+				</div>
+
+			</div>
+		
+		</div>
+
+	</section>
+
+
 	<section id="connect" class="connect">
 			
 		<header>
