@@ -17,11 +17,12 @@ get_header();
 
 		<?php
 		while ( have_posts() ) : the_post();
+			global $post;
 			?>
 			<article>
 				<h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
 				<?php the_excerpt(); ?>
-				<p class="meta">Posted by <?php the_author_link() ?> in  <span>on <?php the_date() ?></span></p>
+				<p class="meta">Posted by <?php the_author_link() ?> in <?php get_the_category_list( ',', '', $post->ID ) ?> <span>on <?php the_date() ?></span></p>
 			</article>
 			<?php
 		endwhile;
