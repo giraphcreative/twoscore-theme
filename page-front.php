@@ -156,7 +156,7 @@ get_header();
 					<div class="entry-content">
 						<h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
 						<?php the_excerpt(); ?>
-						<p class="meta">Posted by <?php the_author_link() ?> <span>on <?php the_date() ?></span></p>
+						<p class="meta">Posted by <?php the_author_link() ?> in <?php print get_the_category_list( ', ', '', get_the_ID() ) ?> <span>on <?php the_date() ?></span></p>
 					</div>
 				</div>
 					<?php

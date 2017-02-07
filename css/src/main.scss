@@ -335,6 +335,10 @@ section#blog {
 		@include clearfix;
 		border-top: 2px dotted rgba( white, .5 );
 
+		a:hover {
+			border-bottom: 1px dotted rgba( white, .4 );
+		}
+
 		&:first-child {
 			border-top: none;
 		}
