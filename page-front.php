@@ -23,7 +23,7 @@ get_header();
 					</div>
 					<h3>Strategic Marketing</h3>
 					<p>Over 90% of our clients choose us as their full-service marketing department. Click below to learn why.</p>
-					<p><a href="#contact" class="button">Learn More</a></p>
+					<p><a href="#connect" class="button">Learn More</a></p>
 				</div>
 				<div class="block">
 					<div class="text-center">
@@ -31,7 +31,7 @@ get_header();
 					</div>
 					<h3>Strategic Planning</h3>
 					<p>We draw on our many years of credit union experience to compare your trends to industry and peer, ask challenging questions, and align your management team around future organizational objectives.</p>
-					<p><a href="#contact" class="button">Learn More</a></p>
+					<p><a href="#connect" class="button">Learn More</a></p>
 				</div>
 				<div class="block">
 					<div class="text-center">
@@ -39,7 +39,7 @@ get_header();
 					</div>
 					<h3>Marketing Review</h3>
 					<p>Over 90% of our clients choose us as their full-service marketing department. Click below to learn why.</p>
-					<p><a href="#contact" class="button">Learn More</a></p>
+					<p><a href="#connect" class="button">Learn More</a></p>
 				</div>
 				<div class="block">
 					<div class="text-center">
@@ -47,7 +47,7 @@ get_header();
 					</div>
 					<h3>Reimagined Brand</h3>
 					<p>From culture development to new logos and website redesigns, we're here to help you bring your brand to life for your members.</p>
-					<p><a href="#contact" class="button">Learn More</a></p>
+					<p><a href="#connect" class="button">Learn More</a></p>
 				</div>
 			</div>
 			
@@ -167,6 +167,7 @@ get_header();
 				}				
 			}
 			?>
+			
 
 			<div class="read-more"><a href="/blog">All Blog Entries &raquo;</a></div>
 			
