@@ -15,55 +15,55 @@ get_header();
 		</header>
 
 		<div class="inner">
+			
+			<div class="blocks">
+				<div class="block">
+					<div class="text-center">
+						<img src="<?php bloginfo( 'template_url' ); ?>/img/icon-marketing-research.png">
+					</div>
+					<h3>Strategic Marketing</h3>
+					<p>Over 90% of our clients choose us as their full-service marketing department. Click below to learn why.</p>
+					<p><a href="#contact" class="button">Learn More</a></p>
+				</div>
+				<div class="block">
+					<div class="text-center">
+						<img src="<?php bloginfo( 'template_url' ); ?>/img/icon-road.png">
+					</div>
+					<h3>Strategic Planning</h3>
+					<p>We draw on our many years of credit union experience to compare your trends to industry and peer, ask challenging questions, and align your management team around future organizational objectives.</p>
+					<p><a href="#contact" class="button">Learn More</a></p>
+				</div>
+				<div class="block">
+					<div class="text-center">
+						<img src="<?php bloginfo( 'template_url' ); ?>/img/icon-marketing-review.png">
+					</div>
+					<h3>Marketing Review</h3>
+					<p>Over 90% of our clients choose us as their full-service marketing department. Click below to learn why.</p>
+					<p><a href="#contact" class="button">Learn More</a></p>
+				</div>
+				<div class="block">
+					<div class="text-center">
+						<img src="<?php bloginfo( 'template_url' ); ?>/img/icon-branding.png">
+					</div>
+					<h3>Reimagined Brand</h3>
+					<p>From culture development to new logos and website redesigns, we're here to help you bring your brand to life for your members.</p>
+					<p><a href="#contact" class="button">Learn More</a></p>
+				</div>
+			</div>
+			
+			<div class="right-column">
+				<div class="block">
+					<h3>Case Studies</h3>
+					<p>Read case studies about our recent projects.</p>
+					<p><a href="/case-studies" class="button">Case Studies</a></p>
+				</div>
+				<div class="block">
+					<h3>Testimonials</h3>
+					<p>See what our clients have to say about us.</p>
+					<p><a href="#testimonials" class="button">Testimonials</a></p>
+				</div>
+			</div>
 
-			<div class="shutter">
-				<img src="<?php bloginfo( 'template_url' ) ?>/img/arrow-large.png">
-				<h4>Strategic Marketing Partnerships</h4>
-				<div class="caption">
-					<p>CEOs want to know they’re getting every penny of value out of their investment in marketing.  Marketers want help measuring and managing the investment so they can focus on executing the plan.  We bring our many years of industry expertise to each client relationship in order to develop a dynamic and powerful marketing strategy that delivers a solid return on investments.</p>
-				</div>
-			</div>
-		
-			<div class="shutter">
-				<img src="<?php bloginfo( 'template_url' ) ?>/img/arrow-large.png">
-				<h4>Marketing Mentoring</h4>
-				<div class="caption">
-					<p>We work one-on-one with marketing employees coaching them on the things they need to know to be successful.  Driven by their own goals and strengths, we support and encourage them in the areas on which they want to focus while helping the credit union realize increased productivity and results.</p>
-				</div>
-			</div>
-		
-			<div class="shutter">
-				<img src="<?php bloginfo( 'template_url' ) ?>/img/arrow-large.png">
-				<h4>Marketing Workshops</h4>
-				<div class="caption">
-					<p>Marketing isn’t just one person or department in the credit union. Everyone in the credit union is a marketer, and we give everyone in the organization the skills to know how to live out their credit union’s vision every day with every member and every transaction.</p>
-				</div>
-			</div>
-		
-			<div class="shutter">
-				<img src="<?php bloginfo( 'template_url' ) ?>/img/arrow-large.png">
-				<h4>Marketing Assessments</h4>
-				<div class="caption">
-					<p>We perform an extensive audit to make sure that all marketing efforts are solidly in line with the credit union’s overall objectives and goals, and draw on industry knowledge to suggest tactics and strategies to maximize the potential of the existing plan.  This is a great way for a credit union to get the outside perspective they need to ensure the marketing plan is the most relevant and best use of its budget.</p>
-				</div>
-			</div>
-		
-			<div class="shutter">
-				<img src="<?php bloginfo( 'template_url' ) ?>/img/arrow-large.png">
-				<h4>Mastermind Groups</h4>
-				<div class="caption">
-					<p>These groups bring together the brightest and most talented credit union CEOS and marketers nationally on a monthly basis to work through specific challenges, learn from and encourage one another, and build a community of future leaders in the industry.  Mastermind groups are the coolest party in the credit union space.</p>
-				</div>
-			</div>
-		
-			<div class="shutter">
-				<img src="<?php bloginfo( 'template_url' ) ?>/img/arrow-large.png">
-				<h4>Strategic Planning Sessions</h4>
-				<div class="caption">
-					<p>Drawing on our many years of industry experience, we share your credit union’s trends against industry and peer trends, ask challenging questions and align the management team around future organizational objectives.  Once the session is complete, we compile the outcomes and provide a formalized strategic plan document for the credit union.</p>
-				</div>
-			</div>
-		
 		</div>
 
 	</section>

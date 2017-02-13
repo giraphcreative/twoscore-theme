@@ -267,3 +267,19 @@
 }
 
 
+.button, button {
+	background: $purple;
+	padding: 20px 30px;
+	color: white;
+	@include font-title;
+	transition: 300ms opacity ease-in-out;
+	display: inline-block;
+
+	&:hover {
+		color: white;
+		text-decoration: none;
+		opacity: .8;
+	}
+}
+
+

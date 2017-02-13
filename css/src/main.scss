@@ -202,10 +202,50 @@ section {
 
 
 section#consulting {
-	background: $grey;
-
 	.inner {
+		max-width: 1220px;
+		margin: 0 auto;
 		text-align: center;
+
+		.blocks {
+			padding-bottom: 30px;
+			@include clearfix;
+
+			@include respond-to( 1024px ) {
+				width: 70%;
+				float: left;
+			}
+
+			.block {
+				padding: 20px;
+
+				img {
+					max-width: 50%;
+				}
+
+				@include respond-to( 768px ) {
+					width: 50%;
+					float: left;
+				}
+			}
+		}
+
+		button, .button {
+			margin-top: 10px;
+		}
+	
+		.right-column {
+			padding: 30px 20px 20px;
+
+			.block {
+				padding: 20px 0;
+			}
+
+			@include respond-to( 1024px ) {
+				width: 30%;
+				float: left;
+			}
+		}
 	}
 }
 
