@@ -28,7 +28,7 @@ get_header();
 		endif;
 		?>
 		
-		<div class="subscribe">
+		<div class="subscribe-link">
 			<?php print do_shortcode( '[gravityform id="2" title="true" description="true"]' ); ?>
 		</div>
 		</article>

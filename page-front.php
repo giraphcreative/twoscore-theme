@@ -168,8 +168,10 @@ get_header();
 			}
 			?>
 			
-
-			<div class="read-more"><a href="/blog">All Blog Entries &raquo;</a></div>
+			<div class="aux">
+				<a href="/blog" class="read-more">All Blog Entries &raquo;</a>
+				<a href="/subscribe" class="subscribe-link">Subscribe for Updates &raquo;</a>
+			</div>
 			
 		</div>
 
