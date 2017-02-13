@@ -462,6 +462,34 @@ section#about {
 }
 
 
+section#testimonials {
+	.wrap {
+		max-width: 1220px;
+		margin: 0 auto;
+	}
+
+	.inner {
+		@include clearfix;
+		padding-bottom: 30px;
+
+		blockquote {
+			padding: 30px 20px;
+
+			p {
+				font-size: 1.8em;
+				@include font-italic;
+				color: lighten( $grey, 20% );
+			}
+
+			@include respond-to( 768px ) {
+				width: 50%;
+				float: left;
+			}
+		}
+	}
+}
+
+
 section#values {
 	.inner {
 		text-align: center;

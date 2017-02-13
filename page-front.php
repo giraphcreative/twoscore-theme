@@ -192,15 +192,6 @@ get_header();
 				<li>Strategic Planning Sessions</li>
 			</ul>
 		</div>
-
-		<div class="quotes">
-			<p>"Amanda McMeans of TwoScore is a great resource for small credit unions that are looking to take their marketing to the next level. Her understanding of the credit union movement and the challenges small credit unions face, combined with her marketing expertise, are a combination that set her apart." 
-			<span>- Sarah Dale Harmon, AVP Marketing, Members Exchange Credit Union</span></p>
-
-			<p>"Amanda was very knowledgeable and did a very good job 
-			in getting everyone engaged in the whole process."
-			<span>- Board member, Education First Credit Union</span></p>
-		</div>
 			
 		<div class="download">
 			<a href="<?php bloginfo( 'template_url' ) ?>/documents/speaking-topics.pdf">Download our Speaking Topics</a>
@@ -403,6 +394,31 @@ get_header();
 
 			</div>
 			
+		</div>
+
+	</section>
+
+
+	<section id="testimonials" class="testimonials">
+			
+		<header>
+			<h2>Testimonials</h2>
+		</header>
+
+		<div class="wrap">
+			<div class="inner">
+
+				<blockquote class="testimonial half">
+					<p>"Amanda McMeans of TwoScore is a great resource for small credit unions that are looking to take their marketing to the next level. Her understanding of the credit union movement and the challenges small credit unions face, combined with her marketing expertise, are a combination that set her apart."</p>
+					<span class="by-line">- Sarah Dale Harmon, AVP Marketing, Members Exchange Credit Union</span>
+				</blockquote>
+				<blockquote class="testimonial half">
+					<p>"Amanda was very knowledgeable and did a very good job 
+					in getting everyone engaged in the whole process."</p>
+					<span class="by-line">- Board member, Education First Credit Union</span>
+				</blockquote>
+
+			</div>
 		</div>
 
 	</section>
