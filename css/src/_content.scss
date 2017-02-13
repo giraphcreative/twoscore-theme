@@ -283,3 +283,13 @@
 }
 
 
+.subscribe {
+	background: lighten( $grey-light, 10% );
+	margin-top: 20px;
+	padding: 20px;
+
+	@include respond-to( 768px ) {
+		padding: 30px;
+	}
+}
+
