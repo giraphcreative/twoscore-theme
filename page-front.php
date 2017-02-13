@@ -11,7 +11,7 @@ get_header();
 		
 		<header>
 			<h2>What We Do</h2>
-			<p>TwoScore offers a variety of tailored solutions for credit unions to maximize their marketing efforts and develop their teams.</p>
+			<p>TwoScore was founded to work exclusively with credit unions under $100 million in assets. While many firms offer services to this group, they often use a "one-size-fits-all" approach to marketing that doesn't cater to the unique needs of small credit unions.</p>
 		</header>
 
 		<div class="inner">
