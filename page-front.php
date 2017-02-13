@@ -22,7 +22,7 @@ get_header();
 						<img src="<?php bloginfo( 'template_url' ); ?>/img/icon-marketing-research.png">
 					</div>
 					<h3>Strategic Marketing</h3>
-					<p>Over 90% of our clients choose us as their full-service marketing department. Click below to learn why.</p>
+					<p>Over 90% of our clients choose us as their full-service marketing department. From conducting research to setting goals an engaging your employees, we make marketing with measurable results a reality.</p>
 					<p><a href="#connect" class="button">Learn More</a></p>
 				</div>
 				<div class="block">
