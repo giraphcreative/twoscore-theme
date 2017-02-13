@@ -77,65 +77,7 @@ get_header();
 		</header>
 
 		<div class="inner text-center">
-			<!--
-			<div class="shutter">
-				<img src="<?php bloginfo( 'template_url' ) ?>/img/arrow-large.png">
-				<h3><span>1,021%</span> ROI</h3>
-				<div class="caption">
-					<p>Results a $25 million credit union achieved during a two-month used auto loan campaign developed by TwoScore.</p>
-				</div>
-			</div>
-		
-			<div class="shutter">
-				<img src="<?php bloginfo( 'template_url' ) ?>/img/arrow-large.png">
-				<h3><span>1,226%</span> ROI</h3>
-				<div class="caption">
-					<p>TwoScore developed a new auto loan campaign that helped a $44 million credit union achieve 1226% ROI.</p>
-				</div>
-			</div>
-		
-			<div class="shutter">
-				<img src="<?php bloginfo( 'template_url' ) ?>/img/arrow-large.png">
-				<h3><span>1,401%</span> ROI</h3>
-				<div class="caption">
-					<p>A three-month auto loan campaign developed by TwoScore for a $19 million credit union helped them achieve 1401% ROI.</p>
-				</div>
-			</div>
-		
-			<div class="shutter">
-				<img src="<?php bloginfo( 'template_url' ) ?>/img/arrow-large.png">
-				<h3><span>13%</span> Growth</h4>
-				<div class="caption">
-					<p>A $19 million credit union grew their auto loan portfolio over 13% in the first half of 2015 through working with TwoScore.</p>
-				</div>
-			</div>
-		
-			<div class="shutter">
-				<img src="<?php bloginfo( 'template_url' ) ?>/img/arrow-large.png">
-				<h3><span>31%</span> Growth</h3>
-				<div class="caption">
-					<p>A $25 million client credit union grew their auto loan portfolio by over 31% in 2015 through working with TwoScore.</p>
-				</div>
-			</div>
-		
-			<div class="shutter">
-				<img src="<?php bloginfo( 'template_url' ) ?>/img/arrow-large.png">
-				<h3><span>816%</span> ROI</h3>
-				<div class="caption">
-					<p>Results a $44 million credit union achieved from an auto loan campaign developed by TwoScore.</p>
-				</div>
-			</div>
-		
-			<div class="shutter">
-				<img src="<?php bloginfo( 'template_url' ) ?>/img/arrow-large.png">
-				<h3><span>509%</span> ROI</h3>
-				<div class="caption">
-					<p>The results a $44 million credit union realized from a two-month HELOC campaign built by TwoScore.</p>
-				</div>
-			</div>
-			-->
-			<img src="<?php bloginfo( 'template_url' ) ?>/img/infographic.png" class="infographic" >
-
+			<img src="<?php bloginfo( 'template_url' ) ?>/img/infographic.svg" class="infographic" >
 		</div>
 
 	</section>
