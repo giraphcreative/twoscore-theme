@@ -74,8 +74,8 @@ get_header();
 			<h2>Results</h2>
 		</header>
 
-		<div class="inner">
-
+		<div class="inner text-center">
+			<!--
 			<div class="shutter">
 				<img src="<?php bloginfo( 'template_url' ) ?>/img/arrow-large.png">
 				<h3><span>1,021%</span> ROI</h3>
@@ -131,6 +131,8 @@ get_header();
 					<p>The results a $44 million credit union realized from a two-month HELOC campaign built by TwoScore.</p>
 				</div>
 			</div>
+			-->
+			<img src="<?php bloginfo( 'template_url' ) ?>/img/infographic.png" class="infographic" >
 
 		</div>
 
@@ -143,7 +145,7 @@ get_header();
 			<h2>Blog</h2>
 		</header>
 		
-		<div class="inner list-styles">
+		<div class="inner">
 			
 			<?php
 			$wp_query = new WP_Query( array( 'posts_per_page' => 3 ) );
