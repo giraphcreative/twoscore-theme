@@ -415,6 +415,17 @@ get_header();
 					<p>"Amanda McMeans of TwoScore is a great resource for small credit unions that are looking to take their marketing to the next level. Her understanding of the credit union movement and the challenges small credit unions face, combined with her marketing expertise, are a combination that set her apart."</p>
 					<span class="by-line">- Sarah Dale Harmon, AVP Marketing, Members Exchange Credit Union</span>
 				</blockquote>
+
+				<blockquote class="testimonial half">
+					<p>"We have been with TwoScore for 2 years and it's been the best decision we've ever made! Being a small credit union, with limited resources, we struggled with our marketing. Our first year with Amanda was such a success that our board did not hesitate to sign with her again for 2016. We have seen solid growth in our loan portfolio since signing on with TwoScore. Amanda and Liz are talented, creative, knowledgeable and a pleasure to work with!"</p>
+					<span class="by-line">- Julie King, CEO, Harvest Federal Credit Union</span>
+				</blockquote>
+
+				<blockquote class="testimonial half">
+					<p>"We have an extension of our credit union by the expertise Amanda McMeans and Liz Garster offer. The biggest difference with TwoScore and our prior marketing 'attempts' is we have cheerleaders marketing and strategically assisting in reaching our goals."</p>
+					<span class="by-line">- Beth Carpenter, CEO, Educational Community Alliance Credit Union</span>
+				</blockquote>
+
 				<blockquote class="testimonial half">
 					<p>"Amanda was very knowledgeable and did a very good job 
 					in getting everyone engaged in the whole process."</p>

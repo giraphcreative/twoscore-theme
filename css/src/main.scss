@@ -432,8 +432,11 @@ section#blog {
 		@include font-title;
 		text-align: right;
 
+		@include respond-to( 600px ) {
+
+		}
+
 		.subscribe {
-			
 			float: left;
 		}
 	}
