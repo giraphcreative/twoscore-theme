@@ -55,7 +55,7 @@ get_header();
 				<div class="block">
 					<h3>Case Studies</h3>
 					<p>Read case studies about our recent projects.</p>
-					<p><a href="http://twoscore.biz/wp-content/uploads/2017/02/case-studies.pdf" class="button">Case Studies</a></p>
+					<p><a href="http://twoscore.biz/wp-content/uploads/2017/02/case-studies.pdf" target="_blank" class="button">Case Studies</a></p>
 				</div>
 				<div class="block">
 					<h3>Testimonials</h3>

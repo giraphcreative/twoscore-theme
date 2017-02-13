@@ -551,6 +551,13 @@ section#testimonials {
 				width: 50%;
 				float: left;
 			}
+
+			.by-line {
+				display: block;
+				text-align: right;
+				color: lighten( $grey, 10% );
+				font-size: .8em;
+			}
 		}
 	}
 }
