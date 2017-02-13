@@ -27,6 +27,8 @@ get_header();
 			endwhile;
 		endif;
 		?>
+		<hr>
+		<?php print do_shortcode( '[gravityform id="2" title="true" description="true"]' ); ?>
 		</article>
 
 	</section>
