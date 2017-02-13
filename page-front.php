@@ -52,11 +52,13 @@ get_header();
 			</div>
 			
 			<div class="right-column">
+				<!--
 				<div class="block">
 					<h3>Case Studies</h3>
 					<p>Read case studies about our recent projects.</p>
 					<p><a href="/case-studies" class="button">Case Studies</a></p>
 				</div>
+				-->
 				<div class="block">
 					<h3>Testimonials</h3>
 					<p>See what our clients have to say about us.</p>
