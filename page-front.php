@@ -38,7 +38,7 @@ get_header();
 						<img src="<?php bloginfo( 'template_url' ); ?>/img/icon-marketing-review.png">
 					</div>
 					<h3>Marketing Review</h3>
-					<p>Over 90% of our clients choose us as their full-service marketing department. Click below to learn why.</p>
+					<p>Already have a marketing plan in place? We'll perform an audit to ensure it's the most relevant and best use of your budget.</p>
 					<p><a href="#connect" class="button">Learn More</a></p>
 				</div>
 				<div class="block">
