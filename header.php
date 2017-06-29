@@ -25,8 +25,8 @@
 			<li><a href="<?php print ( is_front_page() ? '#speaking' : get_bloginfo( 'home' ) . "?scroll=speaking" ) ?>">Speaking</a></li>
 			<li><a href="<?php print ( is_front_page() ? '#about' : get_bloginfo( 'home' ) . "?scroll=about" ) ?>">About</a></li>
 			<li><a href="<?php print ( is_front_page() ? '#values' : get_bloginfo( 'home' ) . "?scroll=values" ) ?>">Values</a></li>
-			<li><a href="<?php print ( is_front_page() ? '#connect' : get_bloginfo( 'home' ) . "?scroll=connect" ) ?>">Connect</a></li>
 			<li><a href="http://inspherationpodcast.com/">Podcast</a></li>
+			<li><a href="<?php print ( is_front_page() ? '#connect' : get_bloginfo( 'home' ) . "?scroll=connect" ) ?>">Connect</a></li>
 		</ul>
 	</nav>
 
