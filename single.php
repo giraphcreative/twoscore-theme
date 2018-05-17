@@ -27,10 +27,6 @@ get_header();
 			endwhile;
 		endif;
 		?>
-		
-		<div class="subscribe-link">
-			<?php print do_shortcode( '[gravityform id="2" title="true" description="true"]' ); ?>
-		</div>
 		</article>
 
 	</section>

@@ -11,7 +11,11 @@ include( "library/scripts.php" );
 
 // an extra image manipulation function
 include( "library/images.php" );
+include( "library/event.php" );
+include( "library/metabox.php" );
 
+
+define( 'CMB_PREFIX', '_p_' );
 
 // pagination
 function pagination( $prev = '&laquo;', $next = '&raquo;' ) {

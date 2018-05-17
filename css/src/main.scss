@@ -3,28 +3,13 @@
 // include our fonts
 @import url(//fonts.googleapis.com/css?family=EB+Garamond|Open+Sans:300italic,400italic,700italic,400,300,700|La+Belle+Aurore);
 
-// sans-serif mixin
-@mixin sans-serif {
-	font-family: "Open Sans", sans-serif;
-	font-weight: 400;
-}
-
-// serif mixin
-@mixin serif {
-	font-family: "EB Garamond", serif;
-	font-weight: 400;
-}
-
-@mixin cursive {
-	font-family: "La Belle Aurore", cursive, serif;
-	font-weight: 400;
-}
-
 // set our colors
 $purple: #904B8D;
 $grey: #58595B;
+$lime: #8DC63F;
 $grey-light: lighten( $grey, 50% );
 $grey-lighter: lighten( $grey, 54% );
+$grey-dark: darken( $grey, 20% );
 
 
 // import my sass library components
@@ -44,6 +29,7 @@ $grey-lighter: lighten( $grey, 54% );
 // import our components
 @import "fonts";
 @import "nav";
+@import "grid";
 @import "header";
 @import "content";
 @import "connect";
@@ -51,11 +37,11 @@ $grey-lighter: lighten( $grey, 54% );
 
 // base styles
 body {
-	@include sans-serif;
+	@include font;
 	font-size: 100%;
 	line-height: 1.4em;
 	overflow-x: hidden;
-	color: $grey;
+	color: $grey-dark;
 }
 
 strong, th, b {
@@ -71,13 +57,13 @@ strong em, em strong {
 }
 
 a {
-	color: darken( $purple, 20% );
+	color: $grey-dark;
 	text-decoration: none;
-	border-bottom: 1px dotted $purple;
+	border-bottom: 1px dotted $lime;
 	@include prefix( "transition", "color 400ms ease-in-out" );
 
 	&:hover {
-		color: darken( $purple, 5% );
+		color: lighten( $grey-dark, 15% );
 	}
 }
 
@@ -91,7 +77,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-
+	
 }
 
 h2 {
@@ -113,7 +99,7 @@ input[type=text], textarea, .gform_wrapper input[type=text], .gform_wrapper .gin
 	font-size: 14px;
 	-webkit-appearance: none;
 	@include prefix( "border-radius", "0" );
-	@include sans-serif;
+	@include font;
 	opacity: .7;
 	transition: opacity 500ms ease-in-out;
 
@@ -133,23 +119,24 @@ input[type=text], textarea, .gform_wrapper input[type=text], .gform_wrapper .gin
 input[type=submit], button, .btn {
 	display: block;
 	margin: 0 auto;
-	background: darken( $purple, 20% );
-	color: lighten( $purple, 45% );
+	background: $lime;
+	color: $grey-dark;
 	border: 0;
-	font-size: 23px;
-	line-height: 23px;
-	padding: 20px 40px;
+	font-size: 35px;
+	line-height: 35px;
+	padding: 15px 30px;
+	text-transform: uppercase;
 	cursor: pointer;
 	-webkit-appearance: none;
 	@include prefix( "border-radius", "0" );
-	@include sans-serif;
 	@include prefix( "box-shadow", "0 0 15px rgba( 255, 255, 255, 0.3 )" );
 	@include prefix( "transition", "all 300ms ease-in-out" );
+	@include font-title;
 
 	&:hover {
-		background: darken( $purple, 15% );
-		color: white;
 		@include prefix( "box-shadow", "0 0 35px rgba( 255, 255, 255, 0.6 )" );
+		white: $grey-dark;
+		opacity: .9;
 	}
 }
 
@@ -159,31 +146,39 @@ input[type=submit], button, .btn {
 section {
 	@include clearfix;
 	position: relative;
+	background: url(../img/bg-brushed-lg.jpg) top center no-repeat;
+	background-size: cover;
 
 	header {
-		background: url(../img/bg-checkers.png) center center no-repeat;
+		@include clearfix;
 		background-size: cover;
-		padding: 30px 0;
+		padding: 30px 0 15px;
 
 		@include respond-to( 768px ) {
 			padding: 50px 0 30px;
 		}
 
 		h2 {
-			background: url(../img/ribbon.png) center center no-repeat;
-			background-size: contain;
-			padding: 2px 0 15px 0;
+			background: $lime;
+			padding: 15px 0;
 			font-size: 32px;
 			line-height: 40px;
-			color: white;
+			color: $grey-dark;
 			@include font-title;
 			text-transform: uppercase;
 			text-align: center;
+			margin: 0;
 
 			@include respond-to( 768px ) {
-				font-size: 45px;
-				line-height: 50px;
-				padding: 5px 0 25px 0;
+				font-size: 55px;
+				line-height: 60px;
+				padding: 30px 0;
+			}
+
+			@include respond-to( 1024px ) {
+				font-size: 65px;
+				line-height: 70px;
+				padding: 30px 0;
 			}
 		}
 
@@ -198,14 +193,92 @@ section {
 			}
 		}
 	}
+
+	.inner {
+		@include clearfix;
+		padding: 4px 25px 25px;
+		max-width: 1220px;
+		margin: 0 auto;
+
+		ul {
+			list-style-type: none;
+
+			li {
+				position: relative;
+
+				&:before {
+		            content: "\25CF";
+		            counter-increment: item;
+		            color: $grey-dark;
+		            position: absolute;
+					left: -20px;
+					top: 3px;
+		        }
+			}
+		}
+
+		ol {
+			list-style-type: none;
+			counter-reset: item;
+
+			li {
+				position: relative;
+
+				&:before {
+		            content: counter(item) ") ";
+		            counter-increment: item;
+		            color: $grey-dark;
+		            position: absolute;
+					left: -30px;
+					top: 5px;
+		        }
+			}
+
+		}
+
+		ol, ul {
+			padding: 4px 0 4px 30px;
+
+			li {
+				padding: 4px 0;
+			}
+		}
+
+	}
 }
 
 
-section#consulting {
+section#about {
+	header {
+		h2 {
+			@include respond-to( 768px ) {
+				width: 50%;
+				float: left;
+			}
+		}
+
+		h3 {
+			display: none;
+
+			@include respond-to( 768px ) {
+				@include font-title;
+				display: block;
+				float: left;
+				width: 50%;
+				padding: 0 0 5px 0;
+				font-size: 110px;
+				line-height: 110px;
+				text-align: center;
+				color: $grey-dark;
+			}
+		}
+	}
+
 	.inner {
 		max-width: 1220px;
 		margin: 0 auto;
-		text-align: center;
+		@include clearfix;
+		@include font-slab;
 
 		.blocks {
 			padding-bottom: 30px;
@@ -233,297 +306,23 @@ section#consulting {
 		button, .button {
 			margin-top: 10px;
 		}
-	
-		.right-column {
-			padding: 30px 20px 20px;
-
-			.block {
-				padding: 20px 0;
-			}
-
-			@include respond-to( 1024px ) {
-				width: 30%;
-				float: left;
-			}
-		}
 	}
 }
 
 
-section#results {
-	background: url(../img/bg-checkers.png) center center;
-	background-size: contain;
-	border-bottom: 20px solid darken( $grey, 10% );
+section#topics {
+	background: $lime url(../img/bg-topics.jpg) center center no-repeat;
+	background-size: cover;
+	border-top: 30px solid darken( $grey, 10% );
+	border-bottom: 30px solid darken( $grey, 10% );
+	color: $grey-dark;
 
-	header {
-		background: url(../img/bg-eiffel.jpg) bottom center no-repeat;
-		background-size: cover;
-		padding-bottom: 100px;
-
-		@include respond-to( 768px ) {
-			padding-bottom: 200px;
-		}
-
-		h2 {
-
-		}
+	h2 {
+		background: transparent;
 	}
 
-	.inner {
-		text-align: center;
-
-		.infographic {
-			display: block;
-		}
-	}
-}
-
-
-section#speaking {
-	.topics {
-		padding: 20px;
-	}
-
-	.quotes {
-		padding: 20px;
-		background: url(../img/quotes.png) center center no-repeat;
-		background-size: contain;
-		font-size: .9em;
-		color: $grey;
-
-		span {
-			@include font-italic;
-		}
-	}
-
-	.download {
-		a {
-			display: block;
-			background: url(../img/bg-arrow-button.jpg) right center no-repeat;
-			background-size: cover;
-			color: white;
-			padding: 20px 70px 20px 20px;
-			border-bottom: 0;
-		}
-	}
-
-	.dont-see {
-		padding: 20px;
-	}
-
-	@include respond-to( 768px ) {
-		.topics, .quotes, .download, .dont-see {
-			float: left;
-			width: 50%;
-		}
-
-		.topics {
-			width: 60%;
-		}
-
-		.quotes {
-			width: 40%;
-		}
-
-		.download {
-			clear: left;
-		}
-
-		.dont-see {
-			padding: 0 20px 20px 20px;
-		}
-	}
-}
-
-
-section#blog {
-	
-	.inner {
-		background: $purple url(../img/bg-tower.jpg) bottom center no-repeat;
-		background-size: cover;
-		padding: 20px;
-		@include clearfix;
-
-		@include respond-to( 768px ) {		
-			padding: 30px 20% 50px 30px;
-		}
-
-		@include respond-to( 1024px ) {
-			padding: 40px 30% 50px 70px;
-		}
-	}
-
-	@include respond-to( 600px ) {
-		.inner {
-			padding: 30px 35% 30px 30px;
-			position: relative;
-
-			.amanda-photo {
-				position: absolute;
-				width: 30%;
-				height: auto;
-				top: 0;
-				right: 0;
-				bottom: 0;
-			}
-		}
-	}
-
-	a {
-		color: white;
-	}
-
-	.entry {
-		clear: left;
-		padding: 30px 0;
-		@include clearfix;
-		border-top: 2px dotted rgba( white, .5 );
-
-		a:hover {
-			border-bottom: 1px dotted rgba( white, .4 );
-		}
-
-		&:first-child {
-			border-top: none;
-		}
-
-		h3 {
-			@include font-title;
-		}
-
-		p {
-			color: rgba( white, .5 );
-
-			&.meta {
-				color: rgba( white, .4 );
-				font-style: italic;
-				font-size: .9em;
-			}
-		}
-		
-		.thumbnail {
-			img {
-				height: auto !important;
-
-			}	
-
-			@include respond-to( 768px ) {
-				float: left;
-				width: 25%;
-				padding: 0 20px 20px 0;
-			}
-		}
-
-		.entry-content {
-			@include respond-to( 768px ) {
-				float: left;
-				width: 75%;
-
-				h3 {
-					padding-top: 0;
-				}
-			}
-		}
-	}
-
-	.aux {
-		padding: 20px 0;
-		border-top: 2px dotted rgba( white, .5 );
-		@include font-title;
-		
-		@include respond-to( 600px ) {
-			padding: 30px 0;
-		}
-
-		.read-more {
-			text-align: center;
-			display: block;
-			padding: 5px 0;
-
-			@include respond-to( 600px ) {
-				padding: 0;
-				float: right;
-			}
-		}
-
-		.subscribe-link {
-			text-align: center;
-			display: block;
-			padding: 5px 0;
-
-			@include respond-to( 600px ) {
-				padding: 0;
-				float: left;
-			}
-		}
-	}
-
-
-}
-
-
-section#about {
-	.wrap {
-		max-width: 1220px;
-		margin: 0 auto;
-	}
-
-	.inner {
-		.half {
-			padding: 20px;
-
-			@include respond-to( 600px ) {
-				float: left;
-				width: 50%;
-			}
-
-			@include respond-to( 768px ){
-				padding: 30px;
-			}
-
-			@include respond-to( 768px ){
-				padding: 40px;
-			}
-
-			.headshot {
-				width: 320px;
-				height: 320px;
-				border-radius: 50%;
-				margin: 0 auto;
-				overflow: hidden;
-
-				@include respond-to( 768px ) {
-					width: 375px;
-					height: 375px;
-				}
-			}
-		}
-
-		h2 {
-			text-align: center;
-			color: $grey;
-		}
-
-		h3 {
-			text-align: center;
-		}
-	}
-
-	.about-content {
-		background: lighten( $grey, 50% );
-		padding: 20px;
-
-		@include respond-to( 768px ){
-			padding: 30px;
-		}
-
-		@include respond-to( 768px ){
-			padding: 40px;
-		}
-
-		.wrap {
-			max-width: 1220px;
-		}
+	h3 {
+		text-transform: uppercase;
 	}
 }
 
@@ -536,82 +335,96 @@ section#testimonials {
 
 	.inner {
 		@include clearfix;
-		padding-bottom: 30px;
+		padding: 0 25px;
+
+		img {
+			display: block;
+			margin: 0 auto;
+
+			@include respond-to( 500px ) {
+				width: 20%;
+				float: left;
+				clear: left;
+				margin: 0;
+			}
+		}
 
 		blockquote {
-			padding: 30px 20px;
-
-			p {
-				font-size: 1.8em;
-				@include font-italic;
-				color: lighten( $grey, 20% );
+			@include respond-to( 500px ) {
+				width: 77%;
+				margin-left: 1%;
+				float: left;
 			}
 
-			@include respond-to( 768px ) {
-				width: 50%;
-				float: left;
+			p {
+				color: $grey-dark;
 			}
 
 			.by-line {
 				display: block;
-				text-align: right;
-				color: lighten( $grey, 10% );
-				font-size: .8em;
+				color: $grey;
 			}
 		}
+	}
+
+	.cloud {
+		padding: 0 20px;
 	}
 }
 
 
-section#values {
-	.inner {
+section#video {
+	background: url(../img/bg-crowd.jpg) center center no-repeat;
+	background-size: cover;
+
+	.video-container {
+		max-width: 700px;
+		margin: 20px auto;
 		text-align: center;
-		@include font-title;
+	}
 
-		.values-content {
-			padding: 20px;
+	a {
+		border: none;
+	}
+}
+
+
+section#connect {
+	header {
+		position: relative;
+		z-index: 100;
+	}
+
+	.inner {
+		padding: 0 20px 0 0;
+
+		.third {
+			margin: 0 1% 0 0;
 		}
+	}
 
-		.vision {
-			@include font-cursive;
-			font-size: 2.2em;
-			color: $purple;
-			padding: 20px 0 30px;
-		}
+	.events {
+		position: relative;
+		z-index: 1;
+		background: darken( $grey-light, 15% );
+		box-shadow: 0 0 30px rgba( $grey-dark, .4 );
+		
+		ul {
+			font-size: 1.2em;
+			line-height: 1.5em;
+			text-transform: uppercase;
+			padding: 0;
 
-		.boxes {
-			@include respond-to( 670px ) {
-				margin: 0 auto;
-				width: 640px;
-			}
+			li {
+				padding: 15px 0;
 
-			@include respond-to( 960px ) {
-				margin: 0 auto;
-				width: 960px;
-			}
-		}
-
-		.final {
-			display: inline-block;
-			width: 310px;
-			height: 310px;
-			background: url(../img/values-11.png) center center no-repeat;
-			background-size: cover;
-			margin: 5px 5px 30px;
-
-			@include respond-to( 670px ) {
-				float: left;
-				width: 630px;
-			}
-
-			h4 {
-				padding: 125px 20px;
-				font-size: 1.6em;
-				color: $purple;
-
-				@include respond-to( 670px ) {
-					font-size: 2.2em;
-					padding: 100px 80px;
+				&.past {
+					text-decoration: line-through;
+					opacity: .5;
+				}
+	
+				&:before {
+					content: "";
 				}
 			}
 		}
@@ -620,7 +433,7 @@ section#values {
 
 
 .footer-border {
-	background: url(../img/bg-checkers.png) center center no-repeat;
+	background: $lime url(../img/bg-stripes.png) center center no-repeat;
 	background-size: cover;
 	height: 40px;
 
@@ -631,20 +444,30 @@ section#values {
 
 
 footer {
-	background: lighten( $grey, 20% );
+	background: $grey-dark url(../img/bg-stripes.png) center center no-repeat;
+	background-size: cover;
 	padding: 20px;
 	color: white;
 	text-align: center;
+	font-size: 1.2em;
+	line-height: 1.6em;
 	@include clearfix;
+
+	.logo {
+		max-width: 200px;
+	}
 
 	a {
 		color: white;
+		border: none;
+
+		&:hover {
+			color: darken( $grey-light, 20% );
+		}
 	}
 	
-	.credit {
-		padding-top: 15px;
-		font-size: .8em;
-		opacity: .7;
+	span {
+		font-size: 1.3em;
 	}
 
 	.social {
@@ -653,172 +476,12 @@ footer {
 		}
 	}
 
-	@include respond-to( 600px ) {
+	@include respond-to( 768px ) {
 		text-align: left;
 
-		.address, .logo {
-			width: 50%;
-			float: left;
-		}	
-
-		.address {
-			padding: 20px 0;
-		}
-
-		.logo {
-			text-align: right;
-		}
-
-		.social {
-			float: right;
+		.info {
+			padding: 10px;
 		}
 	}
 }
 
-
-.shutter {
-	text-align: center;
-	position: relative;
-	margin: 15px;
-	overflow: hidden;
-	background: $purple;
-	background-size: cover;
-	box-shadow: 3px 3px 40px rgba( 0, 0, 0, 0.5 ) inset;
-	border-radius: 50%;
-	width: 300px;
-	display: inline-block;
-
-	/*
-	@include respond-to( 480px ) {
-		width: 48%;
-	}
-
-	@include respond-to( 840px ) {
-		width: 31.3333%;
-	}
-
-	@include respond-to( 1024px ) {
-		width: 23%;
-	}
-	*/
-
-	&.square {
-		border-radius: 0;
-		background: white;
-		margin: 5px;
-		width: 310px;
-		height: 310px;
-
-		@include respond-to( 670px ) {
-			float: left;
-		}
-
-		h3, h4 {
-			@include font-cursive;
-			font-size: 3em;
-		}
-
-		.caption {
-			color: $grey;
-			padding: 20px;
-			text-align: left;
-
-			.small {
-				font-size: .7em;
-			}
-		}
-
-		.no-touch &:hover, &.open {
-			img {
-				border-radius: 0;
-			}
-		}
-	}
-
-	& img {
-		display: block;
-		width: 100%;
-		position: absolute;
-		top: 0;
-		left: 0;
-		transition: 500ms ease-in-out;
-		transition-property: top, left, right, bottom;
-	}
-
-	h3, h4 {
-		padding: 90px 60px;
-		vertical-align: middle;
-		@include font-title;
-		position: absolute;
-		left: 0;
-		right: 0;
-		transition: 500ms ease-in-out;
-		transition-property: top, left, right, bottom;
-		color: white;
-	}
-
-	h4 {
-		font-size: 28px;
-		line-height: 35px;
-	}
-
-	h3 {
-		font-size: 50px;
-		line-height: 60px;
-	}
-
-	.caption {
-		padding: 15% 14%;
-		position: absolute;
-		top: 0;
-		left: 100%;
-		right: -100%;
-		color: white;
-		transition: 500ms ease-in-out;
-		transition-property: top, left, right, bottom;
-
-		h4, p {
-			padding: 4px 0;
-			margin: 0;
-		}
-
-		p {
-			font-size: .8em;
-			line-height: 1.4em;
-		}
-
-		img {
-			border-radius: 0px !important;
-		}
-
-		a {
-			border: 0;
-			margin: 0 5px;
-			opacity: .6;
-			transition: opacity 400ms ease-in-out;
-			
-
-			&:hover, &:focus {
-				opacity: 1;
-			}
-		}
-	}
-
-	.no-touch &:hover, &.open {
-		h3, h4 {
-			left: -100%;
-			right: 100%;
-		}
-
-		.caption {
-			left: 0;
-			right: 0;
-		}
-		
-		img {
-			left: -100%;
-			right: 100%;
-			border-radius: 50%;
-		}
-	}
-}

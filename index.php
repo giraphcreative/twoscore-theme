@@ -12,7 +12,7 @@ get_header();
 		<header>
 			<h2>Blog</h2>
 		</header>
-		<section class="main-content blog-listing">
+		<div class="main-content blog-listing">
 		<?php
 		if ( is_search() ) {
 			?><h2>Search Results for <span>'<?php print $_REQUEST["s"]; ?>'</span></h2><?php
@@ -25,7 +25,7 @@ get_header();
 			<article>
 				<h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
 				<?php the_excerpt(); ?>
-				<p class="meta">Posted by <?php the_author_link() ?> in <?php print get_the_category_list( ', ', '', get_the_ID() ) ?> <span>on <?php the_date() ?></span></p>
+				<p class="meta">Posted by <?php the_author_link() ?> in <?php print get_the_category_list( ', ', '', get_the_ID() ) ?> <span>on <?php the_date() ?></span>.</p>
 			</article>
 			<?php
 		endwhile;
@@ -34,7 +34,12 @@ get_header();
 			<div class="pagination">
 				<?php pagination(); ?>
 			</div>
-		</section>
+
+		</div>
+
+		<div class="text-center cloud">
+			<img src="<?php bloginfo('template_url'); ?>/img/word-cloud.png">
+		</div>
 
 	</section><!-- #primary -->
 

@@ -17,7 +17,8 @@ body {
 
 
 nav.main {
-	background: $purple;
+	background: white url(../img/bg-brushed.jpg) center center no-repeat;
+	background-size: cover;
 	border-bottom: 10px solid $grey;
 	position: fixed;
 	top: 0;
@@ -41,113 +42,63 @@ nav.main {
 			@include prefix( "transition", "height 300ms ease-in-out" );
 		}
 
-		@include respond-to( 769px ) { height: 76px; }
-
-		&.open {
-			height: 162px;
-			@include respond-to( 500px ) { height: 167px; }
-		}
+		@include respond-to( 769px ) { height: 72px; }
 
 		li {
 			display: inline;
 
 			a {
 				@include font-title;
-				padding: 12px 0;
-				color: white;
+				padding: 9px 0;
+				color: darken( $grey, 10% );
 				text-decoration: none;
 				display: inline-block;
 				float: left;
 				width: 50%;
-				border: 1px solid darken( $purple, 5% );
-				border-left: 0;
-				border-top: 0;
-				line-height: 16px;
-				font-size: 18px;
+				line-height: 24px;
+				font-size: 24px;
 				text-transform: uppercase;
 				white-space: nowrap;
+				@include prefix( "transition", "background 400ms ease-in-out, color 400ms ease-in-out" );
 
-				@include respond-to( 500px ) {
-					width: 33.3333%;
+				&:hover {
+					background: rgba( black, .1 );
+					color: $grey-dark;
+				}
+
+				@include respond-to( 600px ) {
+					width: 25%;
 					padding: 20px 0;
 				}
 
-				@include respond-to( 769px ) {
+				@include respond-to( 800px ) {
 					width: auto;
-					padding: 30px 5px;
+					padding: 24px 5px;
 					float: none;
 					border: 0;
 				}
 
-				@include respond-to( 800px ) {
-					padding: 30px 10px;
+				@include respond-to( 900px ) {
+					padding: 24px 15px;
 				}
 
 				@include respond-to( 1024px ) {
-					width: 10%;
-				}
-
-				.csstransitions &, 
-				.csstransitions &:after, 
-				.csstransitions &:before { 
-					@include prefix( "transition", "all 300ms ease-in-out" );
-				}
-
-				&:hover:before, &:hover:after { color: black; }
-
-				&:hover, &.current {
-					background: lighten( $purple, 5% );
-					color: lighten( $purple, 50% );
-				}
-			}
-
-			@include respond-to( 769px ) {
-				&:last-child a {
-					@include font-cursive;
-					text-transform: lowercase;
-					font-size: 30px;
-					letter-spacing: 2px;
-				}
-
-				&:first-child a {
-					width: 8%;
-					text-indent: -1000px;
-					color: transparent;
-					background: url(../img/icon-home.png) center center no-repeat;
-					opacity: .5;
-
-					&:hover {
-						background: lighten( $purple, 5% ) url(../img/icon-home.png) center center no-repeat;
-					}
-				}
-			}
-			@include respond-to( 1024px ) {
-				&:first-child a {
-					width: 8%;
-					text-indent: -1000px;
-					color: transparent;
-					background: url(../img/icon-home.png) center center no-repeat;
-					opacity: .5;
-
-					&:hover {
-						background: lighten( $purple, 5% ) url(../img/icon-home.png) center center no-repeat;
-					}
-				}
-
-				&:nth-child(2) a {
-					width: 12%;
-				}
-				
-				&:nth-child(4) a {
-					width: 8%;
-				}
-				
-				&:nth-child(6) a, &:nth-child(7) a {
-					width: 8%;
+					padding: 24px 40px;
 				}
 			}
 		}
 
+		&.open {
+			height: 171px;
+
+			@include respond-to( 600px ) {
+				height: 129px;
+			}
+
+			@include respond-to( 800px ) {
+				height: 72px;
+			}
+		}
 	}
 
 	.menu-toggle {

@@ -1,65 +1,19 @@
 
+
 .connect {
-	background-color: $purple;
-	color: lighten( $grey, 60% );
+	color: $grey-dark;
+
+	header {
+		padding-bottom: 0;
+	}
 	
 	.inner {
 		position: relative;
 		padding: 20px;
-
-		.amanda-photo {
-			position: relative;
-			background: url(../img/photo-card.jpg) bottom center no-repeat;
-			background-size: cover;
-			height: 450px;
-			margin: 0 -20px;
-
-			.photo-info {
-				position: absolute;
-				bottom: 0;
-				right: 0;
-				left: 0;
-				text-align: right;
-				padding: 10px 20px;
-				color: white;
-				text-shadow: 0 0 10px $grey;
-				background: rgba( black, .3 );
-				
-				@include respond-to( 600px ) {
-					padding: 10px 30px;
-				}
-
-				.photo-credit {
-					font-size: .8em;
-					opacity: .7;
-
-					a {
-						color: white;
-					}
-				}
-			}
-		}
-
-		@include respond-to( 600px ) {
-			padding: 30px 35% 30px 30px;
-			position: relative;
-
-			.amanda-photo {
-				position: absolute;
-				width: 30%;
-				height: auto;
-				top: 0;
-				right: 0;
-				bottom: 0;
-			}
-		}
-	}
-
-	p.intro {
-		padding: 10px 3%;
 	}
 
 	a {
 		color: white;
 	}
 }
+

@@ -56,67 +56,40 @@
 }
 
 @font-face {
-	font-family:'Clear Line';
-	src: url('fonts/clear-line.eot');
-	src: url('fonts/clear-line.eot?#iefix') format('embedded-opentype'),
-		url('fonts/clear-line.woff') format('woff'),
-		url('fonts/clear-line.ttf') format('truetype'),
-		url('fonts/clear-line.svg#ClearLine-PERSONALUSEONLY') format('svg');
-	font-weight: 400;
-	font-style: normal;
-	font-stretch: normal;
-	unicode-range: U+0020-2212;
+    font-family: 'Bebas';
+    src: url('fonts/bebas.eot');
+    src: url('fonts/bebas.eot?#iefix') format('embedded-opentype'),
+         url('fonts/bebas.woff2') format('woff2'),
+         url('fonts/bebas.woff') format('woff'),
+         url('fonts/bebas.ttf') format('truetype'),
+         url('fonts/bebas.svg#bebasregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
+
 
 
 @mixin font-title {
-	font-family: "Museo Slab", "Rokkit", serif;
+	font-family: "Bebas", serif;
 }
 
-@mixin font-title-italic {
-	font-family: "Museo Slab Italic", "Rokkit", serif;
-}
-
-@mixin font-title-bold {
-	font-family: "Museo Slab Bold", "Rokkit", serif;
-}
-
-@mixin font-title-bold-italic {
-	font-family: "Museo Slab Bold Italic", "Rokkit", serif;
-}
-
-@mixin font-cursive {
-	font-family: "Clear Line", cursive;
+@mixin font-slab {
+	font-family: "Museo Slab", cursive;
 }
 
 @mixin font {
-	font-family: "Open Sans", sans-serif;
-}
-
-@mixin font-light {
-	font-family: "Open Sans", sans-serif;
-	font-weight: 300;
+	font-family: "Museo Slab", cursive;
 }
 
 @mixin font-bold {
-	font-family: "Open Sans", sans-serif;
-	font-weight: bold;
+	font-family: "Museo Slab Bold", cursive;
 }
 
 @mixin font-italic {
-	font-family: "Open Sans", sans-serif;
-	font-style: italic;
-}
-
-@mixin font-light-italic {
-	font-family: "Open Sans", sans-serif;
-	font-weight: 300;
-	font-style: italic;
+	font-family: "Museo Slab Italic", sans-serif;
 }
 
 @mixin font-bold-italic {
-	font-family: "Open Sans", sans-serif;
-	font-weight: 600;
-	font-style: italic;
+	font-family: "Museo Slab Bold Italic", sans-serif;
 }
 

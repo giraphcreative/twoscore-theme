@@ -10,33 +10,63 @@
 	}
 
 	.logo {
-		position: relative;
-		z-index: 5;
-		padding: 50px 20px 20px;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		background: $lime;
+		width: 100%;
+		height: 150px;
+		margin-top: -75px;
+
+		img {
+			position: relative;
+			top: -106px;
+			width: 320px;
+		}
+
+		@include respond-to( 768px ) {
+			height: 100px;
+			margin-top: -50px;
+
+			img {
+				top: -200px;
+				width: 500px;
+			}
+		}
+
+		@include respond-to( 1024px ) {
+			height: 116px;
+			margin-top: -70px;
+
+			img {
+				top: -239px;
+				width: auto;
+			}
+		}
 	}
 
 	.backgroundsize & {
-		background: url(../img/header-small.jpg) top center no-repeat;
+		background: url(../img/bg-header.jpg) top center no-repeat;
 		background-size: cover;
 	}
 
 	.backgroundsize .home & {
-		background: url(../img/header.jpg) center center no-repeat;
+		background: url(../img/bg-header.jpg) center center no-repeat;
 		background-size: cover;
 	}
-	
-	@include respond-to( 768px ) {
-		.logo {
 
-			.home & {
-				position: absolute;
-				left: 20%;
-				top: 10%;
-				max-width: 45%;
-				padding: 0;
+	&.interior {
+		height: 400px;
+
+		.logo {
+			height: 150px;
+
+			img {
+				width: 320px;
+				top: -106px;
 			}
 		}
 	}
-	
 }
 

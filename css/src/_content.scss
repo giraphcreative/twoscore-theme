@@ -20,7 +20,7 @@
 
 	h1 {
 		@include font-title;
-		color: $grey;
+		color: $grey-dark;
 		text-align: center;
 		font-size: 1.8em;
 
@@ -31,7 +31,7 @@
 
 	h2 {
 		@include font-title;
-		color: $grey;
+		color: $grey-dark;
 		font-size: 1.5em;
 		line-height: 1.6em;
 		text-align: center;
@@ -39,7 +39,7 @@
 
 	h3 {
 		@include font-title;
-		color: $grey;
+		color: $grey-dark;
 		font-size: 1.2em;
 		line-height: 1.6em;
 	}
@@ -57,7 +57,7 @@
 		padding-bottom: 20px;
 		border-bottom: 2px dotted lighten( $grey, 40% );
 		margin-bottom: 20px;
-		@include font-italic;
+		@include font;
 
 		span {
 			display: block;
@@ -69,10 +69,9 @@
 	}
 
 	blockquote {
-		@include font-light-italic;
 		padding: 15px 20px;
 		font-size: 1.4em;
-		color: lighten( $grey, 20% );
+		color: lighten( $grey-dark, 20% );
 
 		@include respond-to( 768px ) {
 			padding: 20px 40px;
@@ -88,7 +87,7 @@
 			&:before {
 	            content: "•";
 	            counter-increment: item;
-	            color: lighten( $grey, 20% );
+	            color: lighten( $grey-dark, 20% );
 	            position: absolute;
 				left: -27px;
 				top: 5px;
@@ -106,7 +105,7 @@
 			&:before {
 	            content: counter(item) ") ";
 	            counter-increment: item;
-	            color: lighten( $grey, 20% );
+	            color: lighten( $grey-dark, 20% );
 	            position: absolute;
 				left: -30px;
 				top: 5px;
@@ -129,7 +128,7 @@
 
 	article {
 		padding: 20px 0;
-		border-top: 2px dotted lighten( $grey, 40% );
+		border-top: 2px dotted lighten( $grey-dark, 40% );
 
 		&:first-child {
 			border-top: 0;
@@ -216,6 +215,33 @@
 }
 
 
+img {
+	max-width: 100%;
+	margin: 20px 0;
+
+	&.alignright {
+		@include respond-to( 480px ) {			
+			float: right;
+			margin: 0 0 15px 15px;
+			max-width: 50%;
+		}
+	}
+
+	&.alignleft {
+		@include respond-to( 480px ) {			
+			float: left;
+			margin: 0 15px 15px 0;
+			max-width: 50%;
+		}
+	}
+
+	&.aligncenter {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+
 .blog-listing {
 	article {
 		img {
@@ -268,12 +294,14 @@
 
 
 .button, button {
-	background: $purple;
-	padding: 20px 30px;
+	background: $grey;
+	padding: 10px 20px;
 	color: white;
 	@include font-title;
 	transition: 300ms opacity ease-in-out;
 	display: inline-block;
+	border-radius: 10px;
+	letter-spacing: 0.5px;
 
 	&:hover {
 		color: white;
@@ -292,5 +320,11 @@
 		margin-top: 40px;
 		padding: 30px;
 	}
+}
+
+
+.wrap {
+	max-width: 1220px;
+	margin: 0 auto;
 }
 
